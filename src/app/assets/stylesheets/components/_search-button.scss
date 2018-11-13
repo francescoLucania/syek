@@ -1,0 +1,16 @@
+.search-button {
+    @include size(3.2rem);
+    @include interact(color, $primary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $gray-300;
+    color: $gray-700;
+
+    > .mdi {
+        @include font(2rem, 2rem);
+
+        padding-top: 1px;
+    }
+}

@@ -1,0 +1,515 @@
+extends layouts/application
+
+block title
+    title Demo / Neo
+
+block main
+    .container
+        br
+        br
+        br
+
+        article
+            h3 Typography:
+            br
+
+            h1 Heading 1
+            h2 Heading 2
+            h3 Heading 3
+            h4 Heading 4
+            h5 Heading 5
+            h6 Heading 6
+            br
+            br
+
+            h1.display-1 Display-1
+            br
+
+            h2.display-2 Display-1
+            br
+
+            h2.display-3 Display-2
+            br
+
+            h3.display-4 Display-3
+            br
+
+            h4.display-5 Display-4
+            br
+
+            h5.display-6 Display-5
+            br
+            br
+            br
+
+            p.lead Text lead
+            p Text base
+            p.small Text small
+            br
+            br
+            br
+
+            article
+                h3 Paragraph
+                p В <a href='#'>христианской средневековой Европе</a> тело человека после смерти <b class='text-danger'>оказывалось</b> в церковной земле, поближе к храму: <small>мертвые</small> оставались <span class='lead'>лежать</span> там же, где обитали живые. Римский император <b>Юлиан Отступник</b> уже в IV веке сетовал, что «христиане весь мир заполонили мертвецами и могилами». В анонимных могилах хоронили бедняков и погибших от чумы. На кладбище Невинных младенцев вифлеемских в Париже «слой захоронений к XV веку уходил на 10 метров в глубину, а одна могила могла содержать останки полутора тысяч покойников».
+                p Начало его биографии ничем не примечательно. Отец Тимофея перепродавал в Москве вологодское сукно. Подростком нашего героя отдали в церковную школу. Затем он стал помощником местного архиерея, который еще и женил его на своей внучке, — завидный карьерный рост и неплохие перспективы для сына небогатого купца.
+                p Почему-то это никого не смущало. Естественно, престарелому владыке обо всем докладывали, но он, видимо, предпочитал не обращать внимания на проделки зятя. Зато когда архиерей умер, его последователь сразу же отправил нашего героя в отставку. Анкудинов затосковал и пустился во все тяжкие: кабаки, общества с запятнанной репутацией, азартные игры, сомнительные сделки.
+                blockquote.blockquote
+                    p Анкудинов под предлогом «показать супругу гостям при всем параде» выпрашивает у одного из сослуживцев большое количество женских украшений — и немедленно продает их, а деньги спускает в кабаках.
+                p
+
+                br
+            br
+            br
+
+            article
+                h3 Links & button
+                br
+
+                h6: a(href='#') Heading link
+                p: a(href='#') Link
+                br
+                br
+                br
+                p: a.btn.btn-primary(href='#') Button primary
+                br
+                p: a.btn.btn-secondary(href='#') Button secondary
+                br
+                p: a.btn.btn-danger(href='#') Button danger
+                br
+                p: a.btn.btn-dark(href='#') Button dark
+            br
+            br
+            br
+
+            article
+                h3 Forms
+                br
+
+                h6: a(href='#') Heading link
+                p: a(href='#') Link
+                br
+                br
+                br
+
+                form
+                    .form-group
+                        label(for='exampleInputEmail1') Email address
+                        input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+                        small#emailHelp1.form-text.text-muted We'll never share your email with anyone else.
+
+                    .form-group
+                        label(for='exampleInputPassword1') Password
+                        input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+
+                    .form-group
+                        label(for='#inputGroupSelect01') Select
+                        select#inputGroupSelect01.custom-select
+                            option(selected='') Choose...
+                            option(value='1') One
+                            option(value='2') Two
+                            option(value='3') Three
+
+                    .form-group
+                        label(for='#text') Text
+                        textarea.form-control(id='text')
+
+
+                    .form-group.form-check
+                        input#exampleCheck.form-check-input(type='checkbox')
+                        label.form-check-label.ml-1(for='exampleCheck1') Check me out
+                    button.btn.btn-primary(type='submit') Submit
+
+                br
+                br
+                br
+                br
+
+                form
+                    .form-group
+                        label(for='exampleInputEmail2') Email address
+                        input.is-valid#exampleInputEmail2.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+                        small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+                    .form-group
+                        label(for='exampleInputPassword1') Password
+                        input.is-invalid#exampleInputPassword2.form-control(type='password', placeholder='Password')
+                        .invalid-feedback Error text
+                    .form-group.form-check
+                        input#exampleCheck2.form-check-input(type='checkbox')
+                        label.form-check-label.ml-1(for='exampleCheck1') Check me out
+
+
+            br
+            br
+            br
+            article
+                h3 icons test
+                br
+                i.mdi.mdi-youtube
+                i.mdi.mdi-facebook
+                i.mdi.mdi-vk
+                i.mdi.mdi-loop
+
+
+
+            br
+            br
+            br
+            article
+                h3 Lists
+                br
+
+
+
+            ul
+                li Многим просто напросто не нравится способ, которым Bootstrap пишет код, с колонками и строками, как тут:
+                li Чтобы этого добиться, вам нужно будет использовать LESS(В 4-ой версии Sass, но ничего сильно не изменилось) Bootstrap миксины, такие как .make-row() и .make-*-column().
+                li Как изменить порядок колонок на мобильных устройствах.
+                li
+                    | Довольно полезное свойство в сетке Bootstrap это возможность расставлять колонки в разном порядке на мобильных устройствах и десктопных.
+                    ul
+                        li Многим просто напросто не нравится способ, которым Bootstrap пишет код, с колонками и строками, как тут:
+                        li Чтобы этого добиться, вам нужно будет использовать LESS(В 4-ой версии Sass, но ничего сильно не изменилось) Bootstrap миксины, такие как .make-row() и .make-*-column().
+                        li Как изменить порядок колонок на мобильных устройствах.
+                        li Довольно полезное свойство в сетке Bootstrap это возможность расставлять колонки в разном порядке на мобильных устройствах и десктопных.
+
+
+            ol
+                li Многим просто напросто не нравится способ, которым Bootstrap пишет код, с колонками и строками, как тут:
+                li Чтобы этого добиться, вам нужно будет использовать LESS(В 4-ой версии Sass, но ничего сильно не изменилось) Bootstrap миксины, такие как .make-row() и .make-*-column().
+                li Как изменить порядок колонок на мобильных устройствах.
+                li
+                    | Довольно полезное свойство в сетке Bootstrap это возможность расставлять колонки в разном порядке на мобильных устройствах и десктопных.
+
+                    ul
+                        li Многим просто напросто не нравится способ, которым Bootstrap пишет код, с колонками и строками, как тут:
+                        li Чтобы этого добиться, вам нужно будет использовать LESS(В 4-ой версии Sass, но ничего сильно не изменилось) Bootstrap миксины, такие как .make-row() и .make-*-column().
+                        li Как изменить порядок колонок на мобильных устройствах.
+                        li Довольно полезное свойство в сетке Bootstrap это возможность расставлять колонки в разном порядке на мобильных устройствах и десктопных.
+
+
+
+
+        //    p: a.link.link--current(href='#') Link current
+        //    br
+        //    p: a(href='#' style='display: inline-flex; align-items: center;')
+        //        svg.icon.icon--20(role='img')
+        //            use(xlink:href='img/icons.svg#icon-check')
+        //        | Link with icon
+        //    br
+        //    p: a.link.link--pseudo(href='#') Pseudo link
+        //    br
+        //    p: a.link.link--pseudo(href='#' style='display: inline-flex; align-items: center;')
+        //        svg.icon.icon--20(role='img')
+        //            use(xlink:href='img/icons.svg#icon-check')
+        //        | Pseudo link with icon
+        //
+        //br
+        //br
+        //br
+        //
+        //article
+        //    h3 Icons
+        //    br
+        //
+        //    p
+        //        svg.icon.icon--20(role='img')
+        //            use(xlink:href='img/icons.svg#icon-check')
+        //
+        //br
+        //br
+        //br
+        //
+        //article
+        //    h3 Rub sign
+        //    br
+        //
+        //    h6 Sans
+        //    p 1&nbsp;000&nbsp;000&nbsp;<span class='rub-sans'>Р</span>
+        //
+        //    br
+        //    br
+        //
+        //    h6 Serif
+        //    p 1&nbsp;000&nbsp;000&nbsp;<span class='rub-serif'>Р</span>
+        //
+        //br
+        //br
+        //br
+        //
+        //article
+        //    h3 Forms
+        //    br
+        //
+        //    section
+        //        h5 Buttons
+        //        br
+        //
+        //        div(style='width: 280px;')
+        //            p: button.button(type='button') Button
+        //            br
+        //            p: input.button(type='submit' value='Submit' disabled)
+        //            br
+        //            p: a.button.button--block(href='#') Link
+        //
+        //    br
+        //    br
+        //
+        //    section
+        //        h5 Checkboxes
+        //        br
+        //
+        //        div
+        //            span.checkbox
+        //                input.checkbox__tag(type='checkbox' checked)
+        //                span.checkbox__box
+        //            | &nbsp;
+        //            span.checkbox
+        //                input.checkbox__tag(type='checkbox' disabled)
+        //                span.checkbox__box
+        //            | &nbsp;
+        //            span.checkbox.checkbox--invalid
+        //                input.checkbox__tag(type='checkbox')
+        //                span.checkbox__box
+        //        br
+        //
+        //        div
+        //            label.label.label--checkbox
+        //                span.checkbox
+        //                    input.checkbox__tag(type='checkbox')
+        //                    span.checkbox__box
+        //                | Checkbox
+        //
+        //    br
+        //    br
+        //
+        //    section
+        //        h5 Inputs
+        //        br
+        //
+        //        div(style='width: 280px;')
+        //            .input
+        //                input(placeholder='Placeholder')
+        //            br
+        //            .input
+        //                input(value='Disabled' disabled)
+        //            br
+        //            .input.input--invalid
+        //                input(value='Value')
+        //    br
+        //    br
+        //
+        //    section
+        //        h5 Radios
+        //        br
+        //
+        //        div
+        //            span.radio
+        //                input.radio__tag(type='radio' name='radio' checked)
+        //                span.radio__box
+        //            | &nbsp;
+        //            span.radio
+        //                input.radio__tag(type='radio' name='radio' disabled)
+        //                span.radio__box
+        //            | &nbsp;
+        //            span.radio.radio--invalid
+        //                input.radio__tag(type='radio' name='radio')
+        //                span.radio__box
+        //        br
+        //
+        //        div
+        //            label.label.label--radio
+        //                span.radio
+        //                    input.radio__tag(type='radio' name='radio')
+        //                    span.radio__box
+        //                | Radio
+        //
+        //    br
+        //    br
+        //
+        //    section
+        //        h5 Selects
+        //        br
+        //
+        //        div(style='width: 280px;')
+        //            .select
+        //                select.select__tag
+        //                    option(disabled selected) Placeholder
+        //                    option Option 1
+        //                    option Option 2
+        //                    option Option 3
+        //                span.select__arrow
+        //            br
+        //            .select
+        //                select.select__tag(disabled)
+        //                    option(selected) Option 1
+        //                    option Option 2
+        //                    option Option 3
+        //                span.select__arrow
+        //            br
+        //            .select.select--invalid
+        //                select.select__tag
+        //                    option(selected) Option 1
+        //                    option Option 2
+        //                    option Option 3
+        //                span.select__arrow
+        //
+        //    br
+        //    br
+        //
+        //    section
+        //        h5 Textareas
+        //        br
+        //
+        //        div(style='width: 280px;')
+        //            .textarea
+        //                textarea(rows='4' placeholder='Placeholder')
+        //            br
+        //            .textarea
+        //                textarea(rows='4' disabled) Disabled
+        //            br
+        //            .textarea.textarea--invalid
+        //                textarea(rows='4') Value
+        //
+        //    br
+        //    br
+        //
+        //    section
+        //        h5 jQuery UI Autocomplete
+        //        br
+        //
+        //        div(style='width: 280px;')
+        //            .input
+        //                input.js-autocomplete-input(placeholder='Autocomplete')
+        //
+        //    br
+        //    br
+        //
+        //    section
+        //        h5 jQuery UI Datepicker
+        //        br
+        //
+        //        div(style='width: 280px;')
+        //            .input
+        //                input.js-datepicker-input(placeholder='Datepicker' readonly)
+        //
+        //    br
+        //    br
+        //
+        //    section
+        //        h5 jQuery UI Selectmenu
+        //        br
+        //
+        //        div(style='width: 280px;')
+        //            select.js-selectmenu-select
+        //                option(selected disabled) Placeholder
+        //                option Option 1
+        //                option Option 2
+        //                option Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        //        br
+        //        div(style='width: 280px;')
+        //            select.js-selectmenu-select
+        //                option(selected) Option 1
+        //                option Option 2
+        //                option Option 3
+        //                option Option 4
+        //                option Option 5
+        //                option Option 6
+        //                option Option 7
+        //                option Option 8
+        //                option Option 9
+        //                option Option 10
+        //
+        //br
+        //br
+        //br
+        //
+        //article
+        //    h3 WYSIWYG
+        //    br
+        //
+        //    .wysiwyg.js-wysiwyg(style='max-width: 800px;')
+        //        h1 Inline elements in&nbsp;paragraph (Heading&nbsp;1)
+        //        p <a href='#'>Lorem ipsum</a> <b>dolor</b> <i>sit</i> <strong>amet</strong>, <em>consectetur</em> <sub>adipiscing</sub> <sup>elit</sup>, <cite>sed do eiusmod</cite> <q>tempor incididunt</q> <del>ut labore</del> <ins>et dolore</ins> <mark>magna aliqua</mark>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        //
+        //        h2 Blockquote (Heading&nbsp;2)
+        //        blockquote
+        //            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        //            footer
+        //                cite Lorem ipsum
+        //
+        //        h3 Image with caption and without (Heading&nbsp;3)
+        //        figure
+        //            img(src='http://via.placeholder.com/720x405' alt='')
+        //            figcaption Lorem ipsum
+        //        p: img(src='http://via.placeholder.com/720x405' alt='')
+        //
+        //        h4 Definition, ordered &amp;&nbsp;unordered lists (Heading&nbsp;4)
+        //        dl
+        //            dt Lorem ipsum
+        //            dd Lorem ipsum dolor sit amet
+        //        ol
+        //            li Lorem ipsum
+        //            li Lorem ipsum
+        //            li
+        //                p Lorem ipsum
+        //                ol
+        //                    li Lorem ipsum
+        //                    li Lorem ipsum
+        //                    li
+        //                        p Lorem ipsum
+        //                        ol
+        //                            li Lorem ipsum
+        //                            li Lorem ipsum
+        //                            li
+        //                                p Lorem ipsum
+        //                                ul
+        //                                    li Lorem ipsum
+        //                                    li Lorem ipsum
+        //                                    li Lorem ipsum
+        //        ul
+        //            li Lorem ipsum
+        //            li Lorem ipsum
+        //            li
+        //                p Lorem ipsum
+        //                ul
+        //                    li Lorem ipsum
+        //                    li Lorem ipsum
+        //                    li
+        //                        p Lorem ipsum
+        //                        ul
+        //                            li Lorem ipsum
+        //                            li Lorem ipsum
+        //                            li
+        //                                p Lorem ipsum
+        //                                ol
+        //                                    li Lorem ipsum
+        //                                    li Lorem ipsum
+        //                                    li Lorem ipsum
+        //
+        //        h5 Table (Heading&nbsp;5)
+        //        table
+        //            caption Lorem ipsum
+        //            thead
+        //                tr
+        //                    th Lorem ipsum
+        //                    th Lorem ipsum
+        //                    th Lorem ipsum
+        //            tbody
+        //                - var tr = 0;
+        //                while tr < 4
+        //                    - tr++
+        //                    tr
+        //                        td Lorem ipsum dolor sit amet
+        //                        td Lorem ipsum dolor sit amet
+        //                        td Lorem ipsum dolor sit amet
+        //            tfoot
+        //                tr
+        //                    td(colspan='3') Lorem ipsum
+        //
+        //        h6 Video embed (Heading&nbsp;6)
+        //        iframe(width='560' height='315' src='https://www.youtube.com/embed/6KxtgS2lU94' allowfullscreen)
+        //
+        //br
+        //br
+        //br

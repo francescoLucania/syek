@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+// 1. Sticky footer
+
+html {
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    &.mod_flexboxtweener { // 1
+        height: 100%;
+    }
+}
+
+body {
+    display: flex; // 1
+    flex-direction: column; // 1
+    min-height: 100vh;
+
+    .mod_flexboxtweener & { // 1
+        height: 100%;
+    }
+}
+
+main { // 1
+    flex: 1;
+
+    .mod_flexboxtweener & {
+        flex: 1 0 auto;
+    }
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+select {
+    border-radius: 0;
+
+    &::-ms-expand { // IE11
+        display: none;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+iframe {
+    border: none;
+}
+
+img {
+    max-width: 100%;
+
+    &[width],
+    &[height] {
+        max-width: none;
+    }
+}
+
+figure {
+    margin: 0;
+}
+
+svg {
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:disabled {
+    cursor: not-allowed;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+
+    &:not([class]) {
+        text-decoration: underline;
+    }
+}
+
+
+.lead {
+    font-weight: normal;
+}

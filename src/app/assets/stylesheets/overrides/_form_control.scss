@@ -1,0 +1,9 @@
+.form-control {
+    height: auto;
+    background: $gray-400;
+
+    @at-root textarea#{&} {
+        height: 19.2rem;
+        resize: none;
+    }
+}

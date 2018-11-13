@@ -1,0 +1,37 @@
+header.site-header
+    .container
+        nav.site-navigate.d-flex.justify-content-between
+            .site-navigate-item.d-flex.align-items-center.py-2.py-md-3
+                a.header-logo.mr-3(href='#')
+                    img(src='img/suek-logo-ru.svg' alt='')
+
+                ul.list-inline.text-uppercase.d-none.mb-0.d-lg-flex
+                    li: a.mr-2(href='#') О проекте
+                    li: a.mr-2(href='#') Новости
+                    li: a.mr-2(href='#') Правила
+                    li: a.mr-2(href='#') Помощь
+                    li: a(href='#') Регионы
+
+            .site-navigate-item.d-flex.align-items-center.d-lg-none
+                button.site-header-btn-icon.navbar-toggler(aria-controls='navbar' data-target="#navbar" data-toggle='collapse')
+                    i.mdi.mdi-menu
+
+            .site-navigate-item.d-none.d-lg-flex.align-items-center
+                a.site-navigate-login-and-registration(href='#') Вход и регистрация
+                a.site-header-btn-icon.search-button.ml-3(href='#')
+                    i.mdi.mdi-magnify
+
+        #navbar.site-navigate.border-top.border-bottom.p-2.navbar-collapse.collapse
+            .site-navigate-item
+                ul.list-inline.text-uppercase.mb-0
+                    li.mb-1: a(href='#') О проекте
+                    li.mb-1: a(href='#') Новости
+                    li.mb-1: a(href='#') Правила
+                    li.mb-1: a(href='#') Помощь
+                    li: a(href='#') Регионы
+
+                .site-navigate-item.d-flex.justify-content-between.align-items-center.mt-3
+                    a.site-navigate-login-and-registration(href='#') Вход и регистрация
+                    a.site-header-btn-icon.search-button.ml-3(href='#')
+                        i.mdi.mdi-magnify
+

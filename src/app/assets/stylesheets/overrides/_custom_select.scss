@@ -1,0 +1,11 @@
+.custom-select {
+    background: $gray-400;
+
+    &:focus {
+        background: $white;
+    }
+
+    &::selection {
+        background: $gray-400;
+    }
+}
