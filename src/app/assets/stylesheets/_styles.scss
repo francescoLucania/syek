@@ -46,6 +46,14 @@ select {
     }
 }
 
+button {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
 textarea {
     resize: none;
 }
@@ -82,11 +90,7 @@ table {
 
 a:hover {
     text-decoration: none;
-    color: inherit;
-
-    &:not([class]) {
-        text-decoration: underline;
-    }
+    color: $primary;
 }
 
 

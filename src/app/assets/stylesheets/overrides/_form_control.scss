@@ -1,5 +1,6 @@
 .form-control {
     height: auto;
+    border-radius: 0;
     background: $gray-400;
 
     @at-root textarea#{&} {

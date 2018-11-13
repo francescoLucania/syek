@@ -13,12 +13,12 @@ header.site-header
                     li: a(href='#') Регионы
 
             .site-navigate-item.d-flex.align-items-center.d-lg-none
-                button.site-header-btn-icon.navbar-toggler(aria-controls='navbar' data-target="#navbar" data-toggle='collapse')
+                button.button-icon(aria-controls='navbar' data-target="#navbar" data-toggle='collapse')
                     i.mdi.mdi-menu
 
             .site-navigate-item.d-none.d-lg-flex.align-items-center
-                a.site-navigate-login-and-registration(href='#') Вход и регистрация
-                a.site-header-btn-icon.search-button.ml-3(href='#')
+                button.site-navigate-login-and-registration(type='button' data-toggle="modal" data-target="#exampleModalLong") Вход и регистрация
+                a.button-icon.search-button.ml-3(href='#')
                     i.mdi.mdi-magnify
 
         #navbar.site-navigate.border-top.border-bottom.p-2.navbar-collapse.collapse
@@ -31,7 +31,7 @@ header.site-header
                     li: a(href='#') Регионы
 
                 .site-navigate-item.d-flex.justify-content-between.align-items-center.mt-3
-                    a.site-navigate-login-and-registration(href='#') Вход и регистрация
-                    a.site-header-btn-icon.search-button.ml-3(href='#')
+                    button.site-navigate-login-and-registration(type='button' data-toggle="modal" data-target="#exampleModalLong") Вход и регистрация
+                    a.button-icon.search-button.ml-3(href='#')
                         i.mdi.mdi-magnify
 

@@ -1,0 +1,47 @@
+#exampleModalLong.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLongTitle', aria-hidden='true')
+    .modal-dialog(role='document')
+        .modal-content.p-2.p-md-5
+            .modal-header.p-0
+                h5#exampleModalLongTitle.modal-title.text-uppercase.mb-2.font-weight-bold Войти
+                button.button-icon.modal-close(type='button', data-dismiss='modal', aria-label='Close')
+                    i.mdi.mdi-close(aria-hidden='true')
+            .modal-body.py-3
+                form
+                    .form-group
+                        input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Электронная почта')
+                    .form-group
+                        input#exampleInputPassword1.form-control(type='password', placeholder='Пароль')
+                    .form-group
+                        .row
+                            .col-6
+                                label.form-group.form-check.mb-0(for='exampleCheck1')
+                                    input#exampleCheck1.form-check-input(type='checkbox')
+                                    .form-check-label.ml-1 Запомнить
+
+                            .col-6
+                                .form-group.text-right.mb-0
+                                    a(href='#') Забыли пароль?
+                    .form-group.text-center или через социальные сети:
+
+                    .d-flex.justify-content-center.mt-2
+
+                            a.button-social-network.mr-1(href='#')
+                                i.mdi.mdi-facebook
+
+                            a.button-social-network.mr-1(href='#')
+                                i.mdi.mdi-twitter
+
+                            a.button-social-network.mr-1(href='#')
+                                i.mdi.mdi-odnoklassniki
+
+                            a.button-social-network.mr-1(href='#')
+                                i.mdi.mdi-at
+
+                            a.button-social-network.mr-1(href='#')
+                                i.mdi.mdi-account-outline
+
+
+
+
+            .modal-footer.py-3
+                button.btn.btn-primary(type='button') Продолжить
