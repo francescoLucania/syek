@@ -18,9 +18,15 @@
 
             > a {
                 display: block;
-                padding-bottom: .8rem;
+                padding-bottom: 1.2rem;
                 white-space: nowrap;
                 color: $gray-700;
+
+                &.active {
+                    &::after {
+                        width: 100%;
+                    }
+                }
 
                 .mod_no-touchevents & {
                     &:hover {
@@ -36,7 +42,7 @@
                     left: 0;
                     height: 3px;
                     width: 0;
-                    background: $gray-700;
+                    background: $primary;
                     transition: $transition-base;
                     content: "";
                 }

@@ -11,7 +11,7 @@ block main
                     h1.display-1.text-uppercase Хабаровский край
                     .region-navigate.mt-2
                         ul.list-inline.d-flex.m-0.text-uppercase.lead
-                            li.mr-3: a(href='#') Идеи
+                            li.mr-3: a.active(href='#') Идеи
                             li.mr-3: a(href='#') Организации
                             li.mr-3: a(href='#') Пользователи
                             li.mr-3: a(href='#') Эксперты
@@ -60,7 +60,7 @@ block main
                                     .small.text-black-50.mb-2 Хабаровская обл. / п. Ванино
                                     h3.font-weight-bold Программа дней открытых дверей в Центрах социального обслуживания Open Day Program at&nbsp;Social&nbsp;Service
                                 p К этой дате планируется приурочить проведение Дней открытых дверей в Центрах социального обслуживания населения столицы.
-                                .tape-card-actions.row
+                                .tape-card-actions.mt-3.row
                                     .col-6: a.btn.btn-primary.btn-block(href='#') Поддерживаю
                                     .col-6: a.btn.btn-secondary.btn-block(href='#') Против
                                 footer.mt-3
@@ -79,7 +79,7 @@ block main
                                     .small.text-black-50.mb-2 Хабаровская обл. / п. Ванино
                                     h3.font-weight-bold День открытых дверей в Центрах социального обслуживания Open&nbsp;Day&nbsp;Program
                                 p День пожилых людей отмечается во всем мире с 1 октября 1991 года. В Москве это праздник для людей старшего поколения. К этой дате планируется приурочить проведение Дней открытых дверей в Центрах социального обслуживания населения столицы. Социальная поддержка старшего... <a href='#'>Узнать больше</a>
-                                .tape-card-actions
+                                .tape-card-actions.mt-3
                                     a.btn.btn-primary.btn-block.mb-2(href='#') День пожилых людей отмечается во всем мире
                                     a.btn.btn-primary.btn-block.mb-2(href='#') В Москве это праздник для людей
                                     a.btn.btn-primary.btn-block.mb-2(href='#') К этой дате планируется приурочить День открытых дверей
@@ -156,6 +156,22 @@ block main
                                         .small.text-sm-right
                                             a(href='#') 2 комментария
 
+
+                        nav.mt-4(aria-label='Page navigation example')
+                            ul.pagination
+
+                                li.page-item
+                                    a.page-link(href='#') 1
+                                li.page-item
+                                    a.page-link(href='#') 2
+                                li.page-item
+                                    a.page-link(href='#') 3
+
+                                li.page-item
+                                    a.page-link(href='#') ...
+
+                                li.page-item
+                                    a.page-link(href='#') 86
 
                 aside.col-12.col-lg-4.col-xl-3
                     .tape-aside(style='min-height: 600px; background: #dedede')
