@@ -10341,3 +10341,7 @@ textarea.form-control {
      object-fit: cover;
   vertical-align: top;
 }
+
+.comment-description, .comment-action {
+  padding-left: 4.6rem;
+}

@@ -8,6 +8,7 @@ ul#myTab.nav.nav-tabs.font-weight-bold.text-uppercase(role='tablist')
     #comments.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
 
         .comments
+
             .comment
                 .commnt-header.d-flex.justify-content-between.align-items-center
                     .comment-user.d-flex
@@ -26,7 +27,38 @@ ul#myTab.nav.nav-tabs.font-weight-bold.text-uppercase(role='tablist')
                         a.button-icon.size-sm(href='#')
                             i.mdi.mdi-minus
 
-                p.my-2 Кафе, отель, ресторан... - без жёсткой руки и внятного понимания - путь к безвозвратным инвестициям. :)
+                p.comment-description.mt-2.mb-0 Кафе, отель, ресторан... - без жёсткой руки и внятного понимания - путь к безвозвратным инвестициям. :)
+                .comment-action.mt-1
+                    a.text-black-50(href='#')
+                        small Пожаловаться
+
+
+
+
+
+            .comment
+                .commnt-header.d-flex.justify-content-between.align-items-center
+                    .comment-user.d-flex
+                        a.comment-user.d-flex.align-items-start(href='#')
+                            .comment-user-image.mr-1
+                                img(src='https://via.placeholder.com/54X54/000000/FFFFFF/?text=Username' alt='username')
+
+                            .comment-user-information.small
+                                .name Востряков Анатолий (модератор)
+                                .date.text-black-50 25.01.2011
+
+                    .d-flex.align-items-center.ml-3.lead.text-black-50.font-weight-bold
+                        a.button-icon.size-sm(href='#')
+                            i.mdi.mdi-plus
+                        div.mx-2 5
+                        a.button-icon.size-sm(href='#')
+                            i.mdi.mdi-minus
+
+                p.comment-description.mt-2.mb-0 Кафе, отель, ресторан... - без жёсткой руки и внятного понимания - путь к безвозвратным инвестициям. :)
+                .comment-action.mt-1
+                    a.text-black-50(href='#')
+                        small Пожаловаться
+
 
 
 
