@@ -12,6 +12,15 @@
         @include size(4.8rem);
     }
 
+    &.size-sm {
+        @include size(2rem);
+
+        > .mdi {
+            @include font(1.6rem, 1.6rem);
+        }
+
+    }
+
     > .mdi {
         @include font(2rem, 2rem);
 

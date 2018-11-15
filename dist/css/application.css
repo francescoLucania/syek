@@ -4830,7 +4830,7 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.2rem;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -4958,8 +4958,8 @@ input[type="button"].btn-block {
 
 .navbar-text {
   display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .navbar-collapse {
@@ -10083,6 +10083,16 @@ textarea.form-control {
   }
 }
 
+.button-icon.size-sm {
+  width: 2rem;
+  height: 2rem;
+}
+
+.button-icon.size-sm > .mdi {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
 .button-icon > .mdi {
   font-size: 2rem;
   line-height: 1;
@@ -10311,4 +10321,23 @@ textarea.form-control {
   background: #384047;
   transition: background all 0.2s ease-in-out;
   content: "";
+}
+
+.comments .comment:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+
+.comment-user-image {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+}
+
+.comment-user-image > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: top;
 }

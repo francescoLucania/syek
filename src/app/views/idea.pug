@@ -1,7 +1,7 @@
 extends layouts/application
 
 block title
-    title Region
+    title Idea
 
 block main
     .section.section--background-gray-100.section--not-bottom-gutter
@@ -21,7 +21,7 @@ block main
         .container
             .row.justify-content-between
                 .col-12.col-lg-8.col-xl-9
-                    article.content-page.mt-4
+                    article.content-page
                         header
                             .text-black-50.mb-2 Хабаровская обл. / п. Ванино
                             h1.h1.mb-3 Open Day Program at Social Service — программа дней открытых дверей в Центрах социального обслуживания
@@ -37,10 +37,10 @@ block main
 
                         footer
                             .mt-3
-                                a.btn.btn-primary.btn-block.mb-2(href='#' style='white-space: normal') День пожилых людей отмечается во всем мире
-                                a.btn.btn-primary.btn-block.mb-2(href='#' style='white-space: normal') В Москве это праздник для людей
-                                a.btn.btn-primary.btn-block.mb-2(href='#' style='white-space: normal') К этой дате планируется приурочить День открытых дверей
-                                a.btn.btn-primary.btn-block.mb-2(href='#' style='white-space: normal') Социальная поддержка старшего поколения и ветеранов
+                                a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') День пожилых людей отмечается во всем мире
+                                a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') В Москве это праздник для людей
+                                a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') К этой дате планируется приурочить День открытых дверей
+                                a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') Социальная поддержка старшего поколения и ветеранов
 
                             .mt-3.text-sm-center.font-weight-bold.small Всего 42 голоса
                             .mt-3.text-sm-center.font-weight-bold.small
@@ -59,6 +59,9 @@ block main
                                         }
                                     })();
                                 .pluso(data-background='transparent', data-options='medium,square,line,horizontal,nocounter,theme=04', data-services='vkontakte,odnoklassniki,facebook,twitter,google')
+
+                    .mt-4
+                        include components/_comments
 
 
 

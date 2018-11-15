@@ -1,0 +1,35 @@
+ul#myTab.nav.nav-tabs.font-weight-bold.text-uppercase(role='tablist')
+    li.nav-item
+        a#comments-tab.nav-link.active(data-toggle='tab', href='#comments', role='tab', aria-controls='comments', aria-selected='true') Комментарии
+    li.nav-item
+        a#users-tab.nav-link(data-toggle='tab', href='#users', role='tab', aria-controls='users', aria-selected='false') Кто голосовал
+
+#myTabContent.px-2.py-3.border-bottom.border-left.border-right.tab-content
+    #comments.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+
+        .comments
+            .comment
+                .commnt-header.d-flex.justify-content-between.align-items-center
+                    .comment-user.d-flex
+                        a.comment-user.d-flex.align-items-start(href='#')
+                            .comment-user-image.mr-1
+                                img(src='https://via.placeholder.com/54X54/000000/FFFFFF/?text=Username' alt='username')
+
+                            .comment-user-information.small
+                                .name Востряков Анатолий (модератор)
+                                .date.text-black-50 25.01.2011
+
+                    .d-flex.align-items-center.ml-3.lead.text-black-50.font-weight-bold
+                        a.button-icon.size-sm(href='#')
+                            i.mdi.mdi-plus
+                        div.mx-2 5
+                        a.button-icon.size-sm(href='#')
+                            i.mdi.mdi-minus
+
+                p.my-2 Кафе, отель, ресторан... - без жёсткой руки и внятного понимания - путь к безвозвратным инвестициям. :)
+
+
+
+
+    #users.tab-pane.fade.show
+        | users
