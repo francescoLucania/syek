@@ -1,0 +1,85 @@
+extends layouts/application
+
+block title
+    title Region
+
+block main
+    .section.section--background-gray-100.section--not-bottom-gutter
+        .container
+            .no-gutters
+                .col-lg-8
+                    .display-1.text-uppercase Хабаровский край
+                    .region-navigate.mt-2
+                        ul.list-inline.d-flex.m-0.text-uppercase.lead
+                            li.mr-3: a(href='#') Идеи
+                            li.mr-3: a(href='#') Организации
+                            li.mr-3: a.active(href='#') Пользователи
+                            li.mr-3: a(href='#') Эксперты
+                            li: a(href='#') О регионе
+
+    .section
+        .container
+            .row.justify-content-between
+                .col-12.col-lg-8.col-xl-9
+                    article.content-page.mt-4
+                        header
+                            .text-black-50.mb-2 Хабаровская обл. / п. Ванино
+                            h1.h1.mb-3 Open Day Program at Social Service — программа дней открытых дверей в Центрах социального обслуживания
+
+
+                        p День пожилых людей отмечается во всем мире с 1 октября 1991 года. В Москве это праздник для людей старшего поколения. К этой дате планируется приурочить проведение.
+                        p Дней открытых дверей в Центрах социального обслуживания населения столицы. Социальная поддержка старшего поколения и ветеранов — приоритет работы Правительства Москвы. В рамках этой работы для них создаются достойные условия жизни, реализуются программы адресной помощи и др. Так, например, весной в столице запущен новый проект «Московское долголетие», который реализуется на базе Центров социального обслуживания.
+                        figure
+                            img(src='img/region-slider/1.jpg', alt='image title')
+                        p За три месяца работы к нему присоединились более 100 тысяч горожан старшего возраста.
+                        p
+                            b Для них организованы бесплатные занятия спортом, творчеством, танцами, пением, рисованием, а также образовательные курсы и игры. На выбор — общая физическая подготовка, скандинавская ходьба, гимнастика информационные технологии, английский язык, курс «Здорово жить» и другие занятия:
+
+                        footer
+                            .mt-3
+                                a.btn.btn-primary.btn-block.mb-2(href='#' style='white-space: normal') День пожилых людей отмечается во всем мире
+                                a.btn.btn-primary.btn-block.mb-2(href='#' style='white-space: normal') В Москве это праздник для людей
+                                a.btn.btn-primary.btn-block.mb-2(href='#' style='white-space: normal') К этой дате планируется приурочить День открытых дверей
+                                a.btn.btn-primary.btn-block.mb-2(href='#' style='white-space: normal') Социальная поддержка старшего поколения и ветеранов
+
+                            .mt-3.text-sm-center.font-weight-bold.small Всего 42 голоса
+                            .mt-3.text-sm-center.font-weight-bold.small
+                                script(type='text/javascript').
+                                    (function () {
+                                        if (window.pluso) if (typeof window.pluso.start == "function") return;
+                                        if (window.ifpluso == undefined) {
+                                            window.ifpluso = 1;
+                                            var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                                            s.type = 'text/javascript';
+                                            s.charset = 'UTF-8';
+                                            s.async = true;
+                                            s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
+                                            var h = d[g]('body')[0];
+                                            h.appendChild(s);
+                                        }
+                                    })();
+                                .pluso(data-background='transparent', data-options='medium,square,line,horizontal,nocounter,theme=04', data-services='vkontakte,odnoklassniki,facebook,twitter,google')
+
+
+
+                aside.col-12.col-lg-4.col-xl-3.mt-5.mt-md-0
+                    .tape-aside.text-md-center(style='min-height: 600px;')
+                        h5.text-uppercase.text-black-50.font-weight-bold Категории идей
+                        ul.list-inline.mb-0.mr-auto
+                            li.mb-1: a(href='#') Все идеи
+                            li.mb-1: a(href='#') п. Ванино
+                            li.mb-1: a(href='#') Новый Ургал
+                            li.mb-1: a(href='#') п. Чегдомын
+
+                        hr.my-3.ml-0.my-md-4.ml-md-auto.text-primary(style='width: 3rem; border: 1px solid')
+
+                        h5.text-uppercase.text-black-50.font-weight-bold У вас есть идея?
+                        p.mb-3.text-black-50 Lorem ipsum dolor sit amet, consectetur&nbsp;adipiscing&nbsp;elit:
+                        a.btn.btn-primary(href='#') Добавить идею
+
+                        hr.my-3.ml-0.my-md-4.ml-md-auto.text-primary(style='width: 3rem; border: 1px solid')
+
+                        h5.text-uppercase.text-black-50.font-weight-bold Расскажите друзьям
+                        p.mb-3.text-black-50 Поделитесь ссылкой&nbsp;на&nbsp;эту&nbsp;страницу:
+                        +social_button_grid('size-md justify-content-md-center')
+

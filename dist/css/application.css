@@ -9774,10 +9774,6 @@ img[width], img[height] {
   max-width: none;
 }
 
-figure {
-  margin: 0;
-}
-
 svg {
   vertical-align: top;
 }
@@ -10169,6 +10165,11 @@ textarea.form-control {
 
 .region-card:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.region-card.disabled {
+  opacity: .65;
+  pointer-events: none;
 }
 
 .region-card-title {
