@@ -4,4 +4,24 @@
     @include media-breakpoint-up(lg) {
         margin: 8rem 0;
     }
+
+    &--background-gray-100 {
+        margin: 0;
+        padding: 6rem 0;
+        background: $gray-100;
+
+        @include media-breakpoint-up(lg) {
+            padding: 8rem 0;
+        }
+    }
+
+    &--not-bottom-gutter {
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+        @include media-breakpoint-up(lg) {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
 }

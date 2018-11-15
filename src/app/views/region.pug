@@ -1,0 +1,130 @@
+extends layouts/application
+
+block title
+    title Region
+
+block main
+    section.section.section--background-gray-100.section--not-bottom-gutter
+        .container
+            .no-gutters
+                .col-lg-8
+                    h1.display-1.text-uppercase Хабаровский край
+                    .region-navigate.mt-2
+                        ul.list-inline.d-flex.m-0.text-uppercase.lead
+                            li.mr-3: a(href='#') Идеи
+                            li.mr-3: a(href='#') Организации
+                            li.mr-3: a(href='#') Пользователи
+                            li.mr-3: a(href='#') Эксперты
+                            li: a(href='#') О регионе
+
+    div.mt-4
+        .container
+            include components/_region_carousel
+
+
+    .section
+        .container
+            .row.justify-content-between
+                .col-12.col-lg-8.col-xl-9
+                    .tape(style='min-height: 600px')
+                        .tape-filter
+
+                            ul.list-inline.d-flex
+
+                                li.mr-2
+                                    .dropdown
+                                        button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                            | На реализации
+                                        .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                                            a.dropdown-item(href='#') Action
+                                            a.dropdown-item(href='#') Another action
+                                            a.dropdown-item(href='#') Something else here
+
+
+                                li.mr-2
+                                    .dropdown
+                                        button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                            | Популярные
+                                        .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                                            a.dropdown-item(href='#') Action
+                                            a.dropdown-item(href='#') Another action
+                                            a.dropdown-item(href='#') Something else here
+
+
+
+
+                        .tape-content.mt-4
+
+                            article.tape-card.p-3
+                                header.mb-2
+                                    .small.text-black-50.mb-2 Хабаровская обл. / п. Ванино
+                                    h3.font-weight-bold Программа дней открытых дверей в Центрах социального обслуживания Open Day Program at&nbsp;Social&nbsp;Service
+                                p К этой дате планируется приурочить проведение Дней открытых дверей в Центрах социального обслуживания населения столицы.
+                                .tape-card-actions.row
+                                    .col-6: a.btn.btn-primary.btn-block(href='#') Поддерживаю
+                                    .col-6: a.btn.btn-secondary.btn-block(href='#') Против
+                                footer.mt-3
+                                    .text-sm-center.font-weight-bold.small 0 поддержало — против 0
+                                    .d-sm-flex.justify-content-between.mt-2.pt-2.border-top
+
+                                        .small
+                                            a(href='#') Avramenko Sergei
+                                            | &nbsp;разместил(а) 25.06.2018
+
+                                        .small.text-sm-right
+                                            a(href='#') 2 комментария
+
+                            article.tape-card.p-3
+                                header.mb-2
+                                    .small.text-black-50.mb-2 Хабаровская обл. / п. Ванино
+                                    h3.font-weight-bold День открытых дверей в Центрах социального обслуживания Open&nbsp;Day&nbsp;Program
+                                p День пожилых людей отмечается во всем мире с 1 октября 1991 года. В Москве это праздник для людей старшего поколения. К этой дате планируется приурочить проведение Дней открытых дверей в Центрах социального обслуживания населения столицы. Социальная поддержка старшего... <a href='#'>Узнать больше</a>
+                                .tape-card-actions
+                                    a.btn.btn-primary.btn-block.mb-2(href='#') День пожилых людей отмечается во всем мире
+                                    a.btn.btn-primary.btn-block.mb-2(href='#') В Москве это праздник для людей
+                                    a.btn.btn-primary.btn-block.mb-2(href='#') К этой дате планируется приурочить День открытых дверей
+                                    a.btn.btn-primary.btn-block.mb-2(href='#') Социальная поддержка старшего поколения и ветеранов
+                                footer.mt-3
+                                    .text-sm-center.font-weight-bold.small Всего 42 голоса
+                                    .d-sm-flex.justify-content-between.mt-2.pt-2.border-top
+
+                                        .small
+                                            a(href='#') Кемеровская область
+                                            | &nbsp;разместил(а) 25.06.2018
+
+                                        .small.text-sm-right
+                                            a(href='#') 2 комментария
+
+                            article.tape-card.p-3
+                                header.mb-2
+                                    .small.text-black-50.mb-2 Хабаровская обл. / п. Ванино
+                                    h3.font-weight-bold День открытых дверей в Центрах социального обслуживания Open&nbsp;Day&nbsp;Program
+                                p День пожилых людей отмечается во всем мире с 1 октября 1991 года. В Москве это праздник для людей старшего поколения. К этой дате планируется приурочить проведение Дней открытых дверей в Центрах социального обслуживания населения столицы. Социальная поддержка старшего... <a href='#'>Узнать больше</a>
+                                .tape-card-actions
+                                    .progress.mb-2
+                                        p День пожилых людей отмечается во всем мире
+                                        .progress-bar(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100')
+                                    .progress.mb-2
+                                        .progress-bar(role='progressbar', style='width: 25%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                    .progress.mb-2
+                                        .progress-bar(role='progressbar', style='width: 50%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                    .progress.mb-2
+                                        .progress-bar(role='progressbar', style='width: 75%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                                    .progress.mb-2
+                                        .progress-bar(role='progressbar', style='width: 100%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
+
+                                footer.mt-3
+                                    .text-sm-center.font-weight-bold.small Всего 42 голоса
+                                    .d-sm-flex.justify-content-between.mt-2.pt-2.border-top
+
+                                        .small
+                                            a(href='#') Кемеровская область
+                                            | &nbsp;разместил(а) 25.06.2018
+
+                                        .small.text-sm-right
+                                            a(href='#') 2 комментария
+
+
+                aside.col-12.col-lg-4.col-xl-3
+                    .tape-aside(style='min-height: 600px; background: #dedede')
+

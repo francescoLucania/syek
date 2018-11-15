@@ -24,7 +24,7 @@
         "node_modules/jquery-ui-dist/jquery-ui.js",
         "node_modules/fontfaceobserver/fontfaceobserver.js",
         "node_modules/svg4everybody/dist/svg4everybody.js",
-        "node_modules/bootstrap/dist/js/bootstrap.js"
+        "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
       ],
       "concat": "vendor.js",
       "dest": "dist/js/"

@@ -1,24 +1,10 @@
-.region {
-
-    &-row {
-        margin-bottom: -1 * ($grid-gutter-width / 2);
-
-        @include media-breakpoint-up(sm) {
-            margin-bottom: -1 * $grid-gutter-width;
-        }
-    }
-
-    &-col {
-        margin-bottom: $grid-gutter-width / 2;
-
-        @include media-breakpoint-up(sm) {
-            margin-bottom: $grid-gutter-width;
-        }
+.tape {
+    &:not(:last-child) {
+        margin-bottom: 3.2rem;
     }
 }
 
-
-.region-card {
+.tape-card {
     @include interact(color, inherit);
     @include interact(background, $primary, "hover .region-card-title::after");
     @include interact(text-decoration, none);

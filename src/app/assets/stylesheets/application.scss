@@ -35,6 +35,7 @@
 
 @import "overrides/headings.scss";
 
+@import "overrides/carousel";
 
 // jQuery UI
 //@import "components/jquery_ui/core";
@@ -63,3 +64,7 @@
 @import "components/search-button";
 
 @import "components/region_card";
+
+@import "components/region_navigate";
+
+@import "components/tape";
