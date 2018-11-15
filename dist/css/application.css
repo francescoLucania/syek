@@ -9920,6 +9920,18 @@ textarea.form-control {
   }
 }
 
+.carousel {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .carousel-control-prev,
 .carousel-control-next {
   width: 12%;
@@ -9944,6 +9956,12 @@ textarea.form-control {
     line-height: 1;
     background: rgba(157, 164, 38, 0.6);
     transition: all 0.2s ease-in-out;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .carousel-indicators {
+    display: none;
   }
 }
 
@@ -10102,6 +10120,10 @@ textarea.form-control {
     width: 6.4rem;
     height: 6.4rem;
   }
+  .size-md .button-social-network {
+    width: 4.2rem;
+    height: 4.2rem;
+  }
 }
 
 .region-row {
@@ -10211,6 +10233,37 @@ textarea.form-control {
   background: #9da426;
   transition: all 0.2s ease-in-out;
   content: "";
+}
+
+.region-carousel-content-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 76%;
+}
+
+.region-carousel-content-box > article {
+  padding: 1.2rem;
+}
+
+@media (max-width: 991.98px) {
+  .region-carousel-content-box > article > h2,
+  .region-carousel-content-box > article > h3,
+  .region-carousel-content-box > article > h4,
+  .region-carousel-content-box > article > h5 {
+    font-size: 1.5rem;
+  }
+  .region-carousel-content-box > article > p {
+    font-size: 1.225rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .region-carousel-content-box > article {
+    padding: 3.2rem;
+  }
 }
 
 .tape .tape-card:not(:last-child) {

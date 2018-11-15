@@ -36,6 +36,9 @@
 
     @include media-breakpoint-up(md) {
         @include size(6.4rem);
-    }
 
+        .size-md & {
+            @include size(4.2rem);
+        }
+    }
 }
