@@ -34,7 +34,7 @@
     }
 
     &.disabled {
-        opacity: .65;
+        opacity: .55;
         pointer-events: none;
     }
 
@@ -52,5 +52,11 @@
             transition: background $transition-base;
             content: "";
         }
+    }
+
+    img {
+        display: block;
+        width: 5.2rem;
+        height: 6.4rem;
     }
 }

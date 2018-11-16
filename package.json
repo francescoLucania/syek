@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@babel/preset-env": "^7.1.6",
     "autoprefixer": "^9.1.1",
     "babel-core": "^6.7.7",
     "babel-preset-env": "^1.7.0",
@@ -39,6 +40,7 @@
     "jquery-ui-dist": "^1.12.1",
     "modernizr": "^3.5.0",
     "normalize.css": "^8.0.0",
-    "svg4everybody": "^2.1.9"
+    "svg4everybody": "^2.1.9",
+    "trix": "^1.0.0"
   }
 }

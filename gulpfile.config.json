@@ -8,7 +8,9 @@
     "vendorStyles": {
       "src": [
         "node_modules/normalize.css/normalize.css",
-        "node_modules/@mdi/font/css/materialdesignicons.css"
+        "node_modules/@mdi/font/css/materialdesignicons.css",
+        "node_modules/trix/dist/trix.css"
+
       ],
       "concat": "vendor.css",
       "dest": "dist/css/"
@@ -24,7 +26,8 @@
         "node_modules/jquery-ui-dist/jquery-ui.js",
         "node_modules/fontfaceobserver/fontfaceobserver.js",
         "node_modules/svg4everybody/dist/svg4everybody.js",
-        "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+        "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+        "node_modules/trix/dist/trix.js"
       ],
       "concat": "vendor.js",
       "dest": "dist/js/"
