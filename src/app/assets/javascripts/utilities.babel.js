@@ -67,3 +67,6 @@ if (enable.interactMultiple) {
 
     throttle('resize', 'optimizedResize');
 })();
+
+
+svg4everybody();

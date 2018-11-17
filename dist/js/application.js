@@ -94,6 +94,8 @@ if (enable.interactMultiple) {
 
     throttle('resize', 'optimizedResize');
 })();
+
+svg4everybody();
 'use strict';
 
 if (enable.jQueryUI.autocomplete === true) {

@@ -9984,6 +9984,42 @@ textarea.form-control {
   background: #9da426;
 }
 
+trix-toolbar {
+  border: 1px solid #dee2e6;
+}
+
+trix-toolbar .trix-button-group {
+  margin-bottom: 0 !important;
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+}
+
+trix-toolbar .trix-button-group:not(:first-child) {
+  margin-left: 0;
+}
+
+trix-toolbar .trix-button-group:not(:first-child):not(:last-child) {
+  border-right: 1px solid #dee2e6;
+}
+
+trix-toolbar .trix-button--icon {
+  border: 0;
+}
+
+trix-toolbar .trix-button--icon[data-trix-attribute="heading1"] {
+  display: none;
+}
+
+trix-editor {
+  min-height: 14rem;
+  border-radius: 0;
+  border-top: 0;
+  border-bottom: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+}
+
 .site-navigate-item > ul > li > a {
   color: #495057;
   font-weight: 500;
@@ -10147,6 +10183,11 @@ textarea.form-control {
   }
 }
 
+.mod_no-touchevents a:hover .button-icon,
+.mod_no-touchevents a.hover .button-icon {
+  color: #9da426;
+}
+
 .region-row {
   margin-bottom: -15px;
 }
@@ -10217,7 +10258,8 @@ textarea.form-control {
 .region-card img {
   display: block;
   width: 5.2rem;
-  height: 6.4rem;
+  height: auto;
+  vertical-align: top;
 }
 
 .region-navigate {

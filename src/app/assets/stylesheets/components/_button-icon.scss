@@ -51,3 +51,7 @@
         }
     }
 }
+
+a {
+    @include interact(color, $primary, 'hover .button-icon');
+}

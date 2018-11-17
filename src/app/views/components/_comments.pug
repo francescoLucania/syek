@@ -60,9 +60,26 @@ ul#myTab.nav.nav-tabs.font-weight-bold.text-uppercase(role='tablist')
                         small Пожаловаться
 
             .comment
-                form
-                    input#x(type='hidden', name='content')
-                    trix-editor(input='x')
+                .d-flex.justify-content-between.align-items-start
+                    a.comment-user.d-flex.align-items-start(href='#')
+                        .comment-user-image.mr-1
+                            img(src='https://via.placeholder.com/54X54/000000/FFFFFF/?text=Username' alt='username')
+                    form.flex-grow-1
+                        input#x(type='hidden', name='content' value='Текст вашего комментария')
+                        trix-editor(input='x')
+
+                .comment-action.d-flex.justify-content-between.align-items-start.mt-2
+                    a.d-inline-flex.align-items-center(href='#')
+                        .button-icon.search-button(href='#')
+                            i.mdi.mdi-paperclip
+
+                        .ml-2 Прикрепить файл
+
+                    button.btn.btn-primary Опубликовать
+
+
+
+
 
 
 

@@ -143,10 +143,18 @@
                         <div class="comment-action mt-1"><a class="text-black-50" href="#"><small>Пожаловаться</small></a></div>
                       </div>
                       <div class="comment">
-                        <form>
-                          <input id="x" type="hidden" name="content">
-                          <trix-editor input="x"></trix-editor>
-                        </form>
+                        <div class="d-flex justify-content-between align-items-start"><a class="comment-user d-flex align-items-start" href="#">
+                            <div class="comment-user-image mr-1"><img src="https://via.placeholder.com/54X54/000000/FFFFFF/?text=Username" alt="username"></div></a>
+                          <form class="flex-grow-1">
+                            <input id="x" type="hidden" name="content" value="Текст вашего комментария">
+                            <trix-editor input="x"></trix-editor>
+                          </form>
+                        </div>
+                        <div class="comment-action d-flex justify-content-between align-items-start mt-2"><a class="d-inline-flex align-items-center" href="#">
+                            <div class="button-icon search-button" href="#"><i class="mdi mdi-paperclip"></i></div>
+                            <div class="ml-2">Прикрепить файл</div></a>
+                          <button class="btn btn-primary">Опубликовать</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -166,7 +174,7 @@
                 <hr class="my-3 ml-0 my-md-4 ml-md-auto text-primary" style="width: 3rem; border: 1px solid">
                 <h5 class="text-uppercase text-black-50 font-weight-bold">У вас есть идея?</h5>
                 <p class="mb-3 text-black-50">Lorem ipsum dolor sit amet, consectetur&nbsp;adipiscing&nbsp;elit:</p><a class="btn btn-primary" href="#">Добавить идею</a>
-                <hr class="my-3 ml-0 my-md-4 ml-md-auto text-primary" style="width: 3rem; border: 1px solid">
+                <hr class="my-3 ml-0 my-md-4 ml-md-auto mr-md-auto d-md-block text-primary" style="width: 3rem; border: 1px solid">
                 <h5 class="text-uppercase text-black-50 font-weight-bold">Расскажите друзьям</h5>
                 <p class="mb-3 text-black-50">Поделитесь ссылкой&nbsp;на&nbsp;эту&nbsp;страницу:</p>
                 <div class="d-flex mt-2 size-md justify-content-md-center"><a class="button-social-network mr-1" href="#"><i class="mdi mdi-facebook"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-twitter"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-odnoklassniki"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-at"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-account-outline"></i></a></div>
