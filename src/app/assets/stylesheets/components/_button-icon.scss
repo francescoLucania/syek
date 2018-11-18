@@ -21,6 +21,16 @@
 
     }
 
+    &--form-type {
+        @include size(4.8rem);
+
+        min-width: 4.8rem;
+
+        @include media-breakpoint-up(md) {
+            @include size(4.8rem);
+        }
+    }
+
     > .mdi {
         @include font(2rem, 2rem);
 

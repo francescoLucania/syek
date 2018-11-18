@@ -1,0 +1,22 @@
+#feedback.modal.fade(tabindex='-1' role='dialog' aria-labelledby='feedback' aria-hidden='true')
+    .modal-dialog(role='document')
+        form.modal-content.p-2.p-md-5
+            .modal-header.p-0.d-block.pb-2
+                h5#feedback-title.modal-title.text-uppercase.mb-2.font-weight-bold Написать пользователю
+                a.user-card.d-flex.align-items-center(href='#')
+                    .user-card-image.mr-2
+                        img(src='https://via.placeholder.com/54X54/000000/FFFFFF/?text=Username' alt='username')
+                    small Avramenko Sergey
+
+                button.button-icon.modal-close(type='button', data-dismiss='modal' aria-label='Close')
+                    i.mdi.mdi-close(aria-hidden='true')
+            .modal-body.py-3
+
+                .form-group
+                    input.form-control(type='text' placeholder='ФИО' value='Константин Константиновский')
+
+                .form-group.m-0
+                    input.form-control(type='email' placeholder='Электронная почта')
+
+            .modal-footer.pt-3.justify-content-start
+                button.btn.btn-primary.w-100(type='button' data-dismiss='modal' aria-label='Close') Подтверждаю

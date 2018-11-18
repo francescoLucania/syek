@@ -36,13 +36,62 @@ block main
                             b Для них организованы бесплатные занятия спортом, творчеством, танцами, пением, рисованием, а также образовательные курсы и игры. На выбор — общая физическая подготовка, скандинавская ходьба, гимнастика информационные технологии, английский язык, курс «Здорово жить» и другие занятия:
 
                         footer
+
                             .mt-3
                                 a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') День пожилых людей отмечается во всем мире
                                 a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') В Москве это праздник для людей
                                 a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') К этой дате планируется приурочить День открытых дверей
                                 a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') Социальная поддержка старшего поколения и ветеранов
 
+                            .mt-3.row
+                                .col-6: a.btn.btn-outline-primary.btn-block(href='#') Поддерживаю
+                                .col-6: a.btn.btn-outline-primary.btn-block(href='#') Против
+
+                            .mt-3
+
+                                .mb-2
+                                    p.text-black-50 День пожилых людей отмечается во всем мире
+                                    .d-flex.align-items-center
+                                        .progress.flex-grow-1
+                                            .progress-bar(role='progressbar', style='width: 30%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
+
+                                        .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
+                                            | 30%
+                                            span.text-black-50 &nbsp;(13)
+
+                                .mb-2
+                                    p.text-black-50 В Москве это праздник для людей
+                                    .d-flex.d-flex.align-items-center
+                                        .progress.flex-grow-1
+                                            .progress-bar(role='progressbar', style='width: 41%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                        .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
+                                            | 41%
+                                            span.text-black-50 &nbsp;(18)
+
+                                .mb-2
+                                    p.text-black-50 К этой дате планируется приурочить День открытых дверей
+                                    .d-flex.align-items-center
+                                        .progress.flex-grow-1
+                                            .progress-bar(role='progressbar', style='width: 13%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                                        .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
+                                            | 13%
+                                            span.text-black-50 &nbsp;(6)
+
+                                .mb-2
+                                    p.text-black-50 Социальная поддержка старшего поколения и ветеранов
+                                    .d-flex.align-items-center
+                                        .progress.flex-grow-1
+                                            .progress-bar(role='progressbar', style='width: 13%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                                        .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
+                                            | 13%
+                                            span.text-black-50 &nbsp;(6)
+
+
+
+
                             .mt-3.text-sm-center.font-weight-bold.small Всего 42 голоса
+
+
                             .mt-3.text-sm-center.font-weight-bold.small
                                 script(type='text/javascript').
                                     (function () {

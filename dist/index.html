@@ -29,7 +29,7 @@
             <button class="button-icon" aria-controls="navbar" data-target="#navbar" data-toggle="collapse"><i class="mdi mdi-menu"></i></button>
           </div>
           <div class="site-navigate-item d-none d-lg-flex align-items-center">
-            <button class="site-navigate-login-and-registration" type="button" data-toggle="modal" data-target="#exampleModalLong">Вход и регистрация</button><a class="button-icon search-button ml-3" href="#"><i class="mdi mdi-magnify"></i></a>
+            <button class="site-navigate-login-and-registration" type="button" data-toggle="modal" data-target="#login-popup">Вход и регистрация</button><a class="button-icon search-button ml-3" href="#"><i class="mdi mdi-magnify"></i></a>
           </div>
         </nav>
         <div class="site-navigate border-top border-bottom p-2 navbar-collapse collapse" id="navbar">
@@ -42,7 +42,7 @@
               <li><a href="#">Регионы</a></li>
             </ul>
             <div class="site-navigate-item d-flex justify-content-between align-items-center mt-3">
-              <button class="site-navigate-login-and-registration" type="button" data-toggle="modal" data-target="#exampleModalLong">Вход и регистрация</button><a class="button-icon search-button ml-3" href="#"><i class="mdi mdi-magnify"></i></a>
+              <button class="site-navigate-login-and-registration" type="button" data-toggle="modal" data-target="#login-popup">Вход и регистрация</button><a class="button-icon search-button ml-3" href="#"><i class="mdi mdi-magnify"></i></a>
             </div>
           </div>
         </div>
@@ -111,7 +111,7 @@
                   </div></a></div>
               <div class="region-col col-sm-6 col-md-6 col-lg-4 col-xl-3"><a class="region-card d-block p-2 p-sm-3 disabled" href="#">
                   <div class="d-flex justify-content-between align-items-start mb-1">
-                    <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Республика<br>Бурятия</h3><img src="img/regions/Coat_of_Arms_of_Krasnodar_Kray.svg" alt="Регион">
+                    <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Краснодарский<br>край</h3><img src="img/regions/krasnoyarsk_krai.png" alt="Регион">
                   </div>
                   <div class="mb-2">7 населённых пунктов</div>
                   <div class="small text-black-50">
@@ -123,7 +123,7 @@
                   </div></a></div>
               <div class="region-col col-sm-6 col-md-6 col-lg-4 col-xl-3"><a class="region-card d-block p-2 p-sm-3 disabled" href="#">
                   <div class="d-flex justify-content-between align-items-start mb-1">
-                    <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Краснодарский<br>край</h3><img src="img/regions/krasnoyarsk_krai.png" alt="Регион">
+                    <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Хабаровский<br>край</h3><img src="img/regions/khab-krai.png" alt="Регион">
                   </div>
                   <div class="mb-2">7 населённых пунктов</div>
                   <div class="small text-black-50">
@@ -163,41 +163,155 @@
         </div>
       </div>
     </footer>
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal fade" id="login-popup" tabindex="-1" role="dialog" aria-labelledby="login popup" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div class="modal-content p-2 p-md-5">
-          <div class="modal-header p-0">
-            <h5 class="modal-title text-uppercase mb-2 font-weight-bold" id="exampleModalLongTitle">Войти</h5>
+        <form class="modal-content p-2 p-md-5">
+          <div class="modal-header p-0 d-flex pb-2">
+            <h5 class="modal-title text-uppercase font-weight-bold">Написать пользователю</h5>
             <button class="button-icon modal-close" type="button" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close" aria-hidden="true"></i></button>
           </div>
           <div class="modal-body py-3">
-            <form>
-              <div class="form-group">
-                <input class="form-control" id="exampleInputEmail1" type="email" placeholder="Электронная почта">
-              </div>
-              <div class="form-group">
-                <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Пароль">
-              </div>
-              <div class="form-group">
-                <div class="row">
-                  <div class="col-6">
-                    <label class="form-group form-check mb-0" for="exampleCheck1">
-                      <input class="form-check-input" id="exampleCheck1" type="checkbox"><span class="form-check-label ml-1">Запомнить</span>
-                    </label>
-                  </div>
-                  <div class="col-6">
-                    <div class="form-group text-right mb-0"><a href="#">Забыли пароль?</a></div>
-                  </div>
+            <div class="form-group">
+              <input class="form-control" type="email" placeholder="Электронная почта">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="password" placeholder="Пароль">
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-6">
+                  <label class="form-group form-check mb-0" for="exampleCheck1">
+                    <input class="form-check-input" id="exampleCheck1" type="checkbox"><span class="form-check-label ml-1">Запомнить</span>
+                  </label>
+                </div>
+                <div class="col-6">
+                  <div class="form-group text-right mb-0"><a href="#">Забыли пароль?</a></div>
                 </div>
               </div>
-              <div class="form-group text-center">или через социальные сети:</div>
-              <div class="d-flex mt-2 justify-content-center"><a class="button-social-network mr-1" href="#"><i class="mdi mdi-facebook"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-twitter"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-odnoklassniki"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-at"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-account-outline"></i></a></div>
-            </form>
+            </div>
+            <div class="form-group text-center">или через социальные сети:</div>
+            <div class="d-flex mt-2 justify-content-center"><a class="button-social-network mr-1" href="#"><i class="mdi mdi-facebook"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-twitter"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-odnoklassniki"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-at"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-account-outline"></i></a></div>
           </div>
           <div class="modal-footer pt-3 justify-content-start">
-            <button class="btn btn-primary" type="button">Продолжить</button>
+            <button class="btn btn-primary w-100" type="button">Продолжить</button>
           </div>
-        </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal fade" id="password-popup" tabindex="-1" role="dialog" aria-labelledby="password popup" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <form class="modal-content p-2 p-md-5">
+          <div class="modal-header p-0">
+            <h5 class="modal-title text-uppercase mb-2 font-weight-bold">Сброс пароля</h5>
+            <button class="button-icon modal-close" type="button" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close" aria-hidden="true"></i></button>
+          </div>
+          <div class="modal-body py-3">
+            <div class="form-group">
+              <p>Введите адрес Вашей электронной почты и на него будет выслана инструкция по сбросу текущего пароля:</p>
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="email" placeholder="user@domain.com">
+            </div>
+            <div class="form-group m-0 text-center"><a href="#">Войти</a>&nbsp;или&nbsp;<a href="#">Зарегистрироваться</a></div>
+          </div>
+          <div class="modal-footer pt-3 justify-content-start">
+            <button class="btn btn-primary w-100" type="button">Продолжить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal fade" id="registration-popup" tabindex="-1" role="dialog" aria-labelledby="registration popup" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <form class="modal-content p-2 p-md-5">
+          <div class="modal-header p-0">
+            <h5 class="modal-title text-uppercase mb-2 font-weight-bold">Регистрация</h5>
+            <button class="button-icon modal-close" type="button" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close" aria-hidden="true"></i></button>
+          </div>
+          <div class="modal-body py-3">
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Имя">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="email" placeholder="Электронная почта">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="password" placeholder="Пароль">
+            </div>
+            <div class="form-group d-flex">
+              <input class="form-control" type="text" placeholder="Код с картинки"><img class="ml-2" src="img/code.jpg" alt="code">
+              <button class="button-icon button-icon--form-type ml-2" type="button" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-reload" aria-hidden="true"></i></button>
+            </div>
+            <div class="form-group m-0">
+              <label class="form-group form-check mb-0" for="exampleCheck1">
+                <input class="form-check-input" id="exampleCheck1" type="checkbox"><span class="form-check-label ml-1">С правилами обсуждения и поведения в сообществе согласен.<a href="#">&nbsp;Прочитать правила</a></span>
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer pt-3 justify-content-start">
+            <button class="btn btn-primary w-100" type="button">Зарегистрироваться</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal fade" id="registration-popup-2" tabindex="-1" role="dialog" aria-labelledby="registration information" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <form class="modal-content p-2 p-md-5">
+          <div class="modal-header p-0">
+            <h5 class="modal-title text-uppercase mb-2 font-weight-bold">Регистрация</h5>
+            <button class="button-icon modal-close" type="button" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close" aria-hidden="true"></i></button>
+          </div>
+          <div class="modal-body py-3">
+            <div class="form-group m-0">
+              <p>На Ваш e-mail было выслано письмо для подтверждения регистрации. Пожалуйста, дождитесь письма и перейдите по ссылке, указанной в нем.</p>
+            </div>
+          </div>
+          <div class="modal-footer pt-3 justify-content-start">
+            <button class="btn btn-primary w-100" type="button" data-dismiss="modal" aria-label="Close">Закрыть</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal fade" id="registration-popup-3" tabindex="-1" role="dialog" aria-labelledby="registration information" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <form class="modal-content p-2 p-md-5">
+          <div class="modal-header p-0 pb-2">
+            <h5 class="modal-title text-uppercase font-weight-bold">Данные регистрации</h5>
+            <button class="button-icon modal-close" type="button" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close" aria-hidden="true"></i></button>
+          </div>
+          <div class="modal-body py-3">
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="ФИО" value="Константин Константиновский">
+            </div>
+            <div class="form-group m-0">
+              <input class="form-control" type="email" placeholder="Электронная почта">
+            </div>
+          </div>
+          <div class="modal-footer pt-3 justify-content-start">
+            <button class="btn btn-primary w-100" type="button" data-dismiss="modal" aria-label="Close">Подтверждаю</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="feedback" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <form class="modal-content p-2 p-md-5">
+          <div class="modal-header p-0 d-block pb-2">
+            <h5 class="modal-title text-uppercase mb-2 font-weight-bold" id="feedback-title">Написать пользователю</h5><a class="user-card d-flex align-items-center" href="#">
+              <div class="user-card-image mr-2"><img src="https://via.placeholder.com/54X54/000000/FFFFFF/?text=Username" alt="username"></div><small>Avramenko Sergey</small></a>
+            <button class="button-icon modal-close" type="button" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close" aria-hidden="true"></i></button>
+          </div>
+          <div class="modal-body py-3">
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="ФИО" value="Константин Константиновский">
+            </div>
+            <div class="form-group m-0">
+              <input class="form-control" type="email" placeholder="Электронная почта">
+            </div>
+          </div>
+          <div class="modal-footer pt-3 justify-content-start">
+            <button class="btn btn-primary w-100" type="button" data-dismiss="modal" aria-label="Close">Подтверждаю</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="js/vendor.js"></script>

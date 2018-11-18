@@ -1,0 +1,16 @@
+.user-card {
+    &-image {
+        @include size(4rem);
+
+        position: relative;
+
+        > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            vertical-align: top;
+        }
+    }
+}
+

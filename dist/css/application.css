@@ -10144,6 +10144,19 @@ trix-editor {
   line-height: 1;
 }
 
+.button-icon--form-type {
+  width: 4.8rem;
+  height: 4.8rem;
+  min-width: 4.8rem;
+}
+
+@media (min-width: 768px) {
+  .button-icon--form-type {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}
+
 .button-icon > .mdi {
   font-size: 2rem;
   line-height: 1;
@@ -10408,4 +10421,19 @@ trix-editor {
 
 .comment-description, .comment-action {
   padding-left: 4.6rem;
+}
+
+.user-card-image {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+}
+
+.user-card-image > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: top;
 }
