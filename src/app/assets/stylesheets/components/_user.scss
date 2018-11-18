@@ -1,3 +1,13 @@
+.users {
+    .user {
+        &:not(:last-child) {
+            padding-bottom: $grid-gutter-width / 2 - 1px;
+            border-bottom: 1px solid $gray-300;
+            margin-bottom: $grid-gutter-width / 2;
+        }
+    }
+}
+
 .user-card {
     &-image {
         @include size(4rem);
@@ -5,11 +15,17 @@
         position: relative;
 
         > img {
+            @include size(100%);
+
             position: absolute;
             top: 0;
             left: 0;
             object-fit: cover;
             vertical-align: top;
+        }
+
+        &.size-lg {
+            @include size(6.4rem);
         }
     }
 }

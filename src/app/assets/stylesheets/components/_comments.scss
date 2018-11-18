@@ -8,9 +8,12 @@
 
 .comment {
     &-user-image {
-        @include size(4rem);
-
+        @include size(3.2rem);
         position: relative;
+
+        @include media-breakpoint-up(md) {
+            @include size(4.8rem);
+        }
 
         > img {
             position: absolute;
@@ -23,6 +26,6 @@
 
     &-description,
     &-action {
-        padding-left: 4.6rem;
+        padding-left: 5.4rem;
     }
 }

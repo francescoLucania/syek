@@ -61,7 +61,7 @@ ul#myTab.nav.nav-tabs.font-weight-bold.text-uppercase(role='tablist')
 
             .comment
                 .d-flex.justify-content-between.align-items-start
-                    a.comment-user.d-flex.align-items-start(href='#')
+                    a.comment-user.d-none.d-sm-flex.align-items-start(href='#')
                         .comment-user-image.mr-1
                             img(src='https://via.placeholder.com/54X54/000000/FFFFFF/?text=Username' alt='username')
                     form.flex-grow-1
@@ -86,4 +86,94 @@ ul#myTab.nav.nav-tabs.font-weight-bold.text-uppercase(role='tablist')
 
 
     #users.tab-pane.fade.show
-        | users
+        .users
+
+            .user.d-sm-flex.justify-content-between
+                a.user-card.d-flex.align-items-center(href='#')
+                    .user-card-image.size-lg.mr-2
+                        img(src='https://via.placeholder.com/100X100/000000/FFFFFF/?text=Username' alt='username')
+                    div
+                        div Avramenko Sergey
+                        small.text-black-50 рейтинг: 21
+
+                .mt-3.mt-sm-0.ml-sm-3.d-flex.align-items-start
+                    a.btn.btn-outline-primary.flex-grow-1(href='#') Написать
+                    a.button-icon.button-icon--size-btn.ml-2(href='#')
+                        i.mdi.mdi-account-plus-outline
+
+
+            .user.d-sm-flex.justify-content-between
+                a.user-card.d-flex.align-items-center(href='#')
+                    .user-card-image.size-lg.mr-2
+                        img(src='https://via.placeholder.com/100X100/000000/FFFFFF/?text=Username' alt='username')
+                    div
+                        div Avramenko Sergey
+                        small.text-black-50 рейтинг: 21
+
+                .mt-3.mt-sm-0.ml-sm-3.d-flex.align-items-start
+                    a.btn.btn-outline-primary.flex-grow-1(href='#') Написать
+                    a.button-icon.button-icon--size-btn.ml-2(href='#')
+                        i.mdi.mdi-account-plus-outline
+
+
+            .user.d-sm-flex.justify-content-between
+                a.user-card.d-flex.align-items-center(href='#')
+                    .user-card-image.size-lg.mr-2
+                        img(src='https://via.placeholder.com/100X100/000000/FFFFFF/?text=Username' alt='username')
+                    div
+                        div Иванов Иван Иванович
+                        small.text-black-50 рейтинг: 21
+
+                .mt-3.mt-sm-0.ml-sm-3.d-flex.align-items-start
+                    a.btn.btn-outline-primary.flex-grow-1(href='#') Написать
+                    a.button-icon.button-icon--size-btn.ml-2(href='#')
+                        | Добавить в друзья
+                        i.mdi.mdi-account-plus-outline
+
+
+            .user.d-sm-flex.justify-content-between
+                a.user-card.d-flex.align-items-center(href='#')
+                    .user-card-image.size-lg.mr-2
+                        img(src='https://via.placeholder.com/100X100/000000/FFFFFF/?text=Username' alt='username')
+                    div
+                        div Avramenko Sergey
+                        small.text-black-50 рейтинг: 21
+
+                .mt-3.mt-sm-0.ml-sm-3.d-flex.align-items-start
+                    a.btn.btn-outline-primary.flex-grow-1(href='#') Написать
+                    a.button-icon.button-icon--size-btn.ml-2(href='#')
+                        | Добавить в друзья
+                        i.mdi.mdi-account-plus-outline
+
+
+
+            .user.d-sm-flex.justify-content-between
+                a.user-card.d-flex.align-items-center(href='#')
+                    .user-card-image.size-lg.mr-2
+                        img(src='https://via.placeholder.com/100X100/000000/FFFFFF/?text=Username' alt='username')
+                    div
+                        div Avramenko Sergey
+                        small.text-black-50 рейтинг: 21
+
+                .mt-3.mt-sm-0.ml-sm-3.d-flex.align-items-start
+                    a.btn.btn-outline-primary.flex-grow-1(href='#') Написать
+                    a.button-icon.button-icon--size-btn.ml-2(href='#')
+                        | Удалить из друзей
+                        i.mdi.mdi-account-remove-outline
+
+
+
+            .user.d-sm-flex.justify-content-between
+                a.user-card.d-flex.align-items-center(href='#')
+                    .user-card-image.size-lg.mr-2
+                        img(src='https://via.placeholder.com/100X100/000000/FFFFFF/?text=Username' alt='username')
+                    div
+                        div Константин Константинопольский
+                        small.text-black-50 рейтинг: 21
+
+                .mt-3.mt-sm-0.ml-sm-3.d-flex.align-items-start
+                    a.btn.btn-outline-primary.flex-grow-1(href='#') Написать
+                    a.button-icon.button-icon--size-btn.ml-2(href='#')
+                        | Заявка отправлена
+                        i.mdi.mdi-timer-sand-empty
+

@@ -2,6 +2,12 @@
     @include media-breakpoint-up(md) {
         max-width: 54rem;
     }
+
+    &--idea {
+        @include media-breakpoint-up(md) {
+            max-width: 84rem;
+        }
+    }
 }
 
 .modal-content {

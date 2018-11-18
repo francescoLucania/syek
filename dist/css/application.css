@@ -9770,10 +9770,6 @@ img {
   max-width: 100%;
 }
 
-img[width], img[height] {
-  max-width: none;
-}
-
 svg {
   vertical-align: top;
 }
@@ -9829,6 +9825,12 @@ a:hover {
 @media (min-width: 768px) {
   .modal-dialog {
     max-width: 54rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-dialog--idea {
+    max-width: 84rem;
   }
 }
 
@@ -10004,6 +10006,8 @@ trix-toolbar .trix-button-group:not(:first-child):not(:last-child) {
 }
 
 trix-toolbar .trix-button--icon {
+  width: 4.8rem;
+  height: 3rem;
   border: 0;
 }
 
@@ -10120,6 +10124,7 @@ trix-editor {
   justify-content: center;
   align-items: center;
   background: #dee2e6;
+  font-size: 0;
   color: #495057;
 }
 
@@ -10144,14 +10149,27 @@ trix-editor {
   line-height: 1;
 }
 
-.button-icon--form-type {
+.button-icon--size-48 {
   width: 4.8rem;
   height: 4.8rem;
   min-width: 4.8rem;
 }
 
 @media (min-width: 768px) {
-  .button-icon--form-type {
+  .button-icon--size-48 {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}
+
+.button-icon--size-btn {
+  width: 4.4rem;
+  height: 4.4rem;
+  min-width: 4.8rem;
+}
+
+@media (min-width: 768px) {
+  .button-icon--size-btn {
     width: 4.8rem;
     height: 4.8rem;
   }
@@ -10405,9 +10423,16 @@ trix-editor {
 }
 
 .comment-user-image {
-  width: 4rem;
-  height: 4rem;
+  width: 3.2rem;
+  height: 3.2rem;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .comment-user-image {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
 }
 
 .comment-user-image > img {
@@ -10420,7 +10445,13 @@ trix-editor {
 }
 
 .comment-description, .comment-action {
-  padding-left: 4.6rem;
+  padding-left: 5.4rem;
+}
+
+.users .user:not(:last-child) {
+  padding-bottom: 14px;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 15px;
 }
 
 .user-card-image {
@@ -10430,10 +10461,17 @@ trix-editor {
 }
 
 .user-card-image > img {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
   vertical-align: top;
+}
+
+.user-card-image.size-lg {
+  width: 6.4rem;
+  height: 6.4rem;
 }

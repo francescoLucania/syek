@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     background: $gray-300;
+    font-size: 0;
     color: $gray-700;
 
     @include media-breakpoint-up(md) {
@@ -21,8 +22,18 @@
 
     }
 
-    &--form-type {
+    &--size-48 {
         @include size(4.8rem);
+
+        min-width: 4.8rem;
+
+        @include media-breakpoint-up(md) {
+            @include size(4.8rem);
+        }
+    }
+
+    &--size-btn {
+        @include size(4.4rem);
 
         min-width: 4.8rem;
 

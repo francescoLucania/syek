@@ -196,24 +196,5 @@ block main
                                     a.dropdown-item(href='#') Показывать 15
                                     a.dropdown-item(href='#') Показывать 20
 
-                aside.col-12.col-lg-4.col-xl-3.mt-5.mt-md-0
-                    .tape-aside.text-md-center(style='min-height: 600px;')
-                        h5.text-uppercase.text-black-50.font-weight-bold Категории идей
-                        ul.list-inline.mb-0.mr-auto
-                            li.mb-1: a(href='#') Все идеи
-                            li.mb-1: a(href='#') п. Ванино
-                            li.mb-1: a(href='#') Новый Ургал
-                            li.mb-1: a(href='#') п. Чегдомын
-
-                        hr.my-3.ml-0.my-md-4.ml-md-auto.text-primary(style='width: 3rem; border: 1px solid')
-
-                        h5.text-uppercase.text-black-50.font-weight-bold У вас есть идея?
-                        p.mb-3.text-black-50 Lorem ipsum dolor sit amet, consectetur&nbsp;adipiscing&nbsp;elit:
-                        a.btn.btn-primary(href='#') Добавить идею
-
-                        hr.my-3.ml-0.my-md-4.ml-md-auto.text-primary(style='width: 3rem; border: 1px solid')
-
-                        h5.text-uppercase.text-black-50.font-weight-bold Расскажите друзьям
-                        p.mb-3.text-black-50 Поделитесь ссылкой&nbsp;на&nbsp;эту&nbsp;страницу:
-                        +social_button_grid('size-md justify-content-md-center')
+                include components/_aside
 

@@ -17,14 +17,14 @@ trix-toolbar {
     }
 
     .trix-button--icon {
+        @include size(4.8rem, 3rem);
+
         border: 0;
 
         &[data-trix-attribute="heading1"] {
             display: none;
         }
     }
-
-
 }
 
 trix-editor {
