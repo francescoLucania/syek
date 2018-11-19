@@ -9872,6 +9872,7 @@ textarea.form-control {
 }
 
 .custom-select {
+  border-radius: 0;
   background: #ced4da;
 }
 
