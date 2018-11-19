@@ -1,0 +1,101 @@
+extends layouts/application
+
+block title
+    title Index
+
+block main
+    section.section.section--background-gray-100.section--not-bottom-gutter
+        .container
+            .no-gutters
+                .col-lg-8
+                    h1.display-1.text-uppercase Общественный форум
+                    .region-navigate.mt-2
+                        ul.list-inline.d-flex.m-0.text-uppercase.lead
+                            li.mr-3: a.active(href='#') О проекте
+                            li.mr-3: a(href='#') Как это работает
+                            li.mr-3: a(href='#') Вопросы и ответы
+
+
+    section.section
+        .container
+            .wysiwyg.js-wysiwyg
+                h2 О проекте (h2)
+
+                h3 Миссия (h3)
+                p Наша миссия — способствовать обеспечению энергетических потребностей мирового сообщества путем добычи угля с соблюдением всех требований безопасности и принципов устойчивого развития, а также с учетом интересов всех заинтересованных сторон.
+                h4 Видение (h4)
+                p Будучи крупнейшим производителем угля на российском рынке, мы стремимся быть одной из ведущих угольных компаний мира. Для этого мы развиваем существующие угледобывающие и обогатительные мощности, инвестируем в новые производственные объекты и продолжаем развивать нашу транспортно-логистическую инфраструктуру. Мы также стремимся к наращиванию объемов добычи на месторождениях, расположенных ближе к целевым рынкам сбыта, и ориентированы на реализацию инновационных проектов во всех сферах нашей деятельности.
+
+                figure
+                    img(src='img/region-slider/1.jpg' alt='image title')
+                    figcaption Подпись к фото, видео или слайдеру
+
+                p За три месяца работы к нему присоединились более 100 тысяч горожан старшего возраста. Для них организованы бесплатные занятия спортом, творчеством, танцами, пением, рисованием, а также образовательные курсы и игры. На выбор — общая физическая подготовка, скандинавская ходьба, гимнастика информационные технологии, английский язык, курс «Здорово жить» и другие занятия.
+
+                h4 Ценности (h4)
+
+                ul
+                    li Дней открытых дверей в Центрах социального обслуживания населения столицы.
+                    li Социальная поддержка старшего поколения и ветеранов.
+                    li В рамках этой работы для них создаются достойные условия жизни.
+
+                .wysiwyg__slider
+                    #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+                        ol.carousel-indicators
+                            li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+                            li(data-target='#carouselExampleIndicators', data-slide-to='1')
+                            li(data-target='#carouselExampleIndicators', data-slide-to='2')
+                        .carousel-inner
+                            .carousel-item.active
+                                img.d-block.w-100(src='img/region-slider/1.jpg', alt='First slide')
+
+                            .carousel-item
+                                img.d-block.w-100(src='img/region-slider/2.jpg', alt='Second slide')
+
+                            .carousel-item
+                                img.d-block.w-100(src='img/region-slider/3.jpg', alt='Third slide')
+
+                        a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+                            i.mdi.mdi-chevron-left(aria-hidden='true')
+                            | Previous
+                        a.carousel-control-next.icon(href='#carouselExampleIndicators', role='button', data-slide='next')
+                            i.mdi.mdi-chevron-right(aria-hidden='true')
+                            span.sr-only
+                            | Next
+
+
+
+                ol
+                    li Дней открытых дверей в Центрах социального обслуживания населения столицы.
+                    li Социальная поддержка старшего поколения и ветеранов.
+                    li В рамках этой работы для них создаются достойные условия жизни.
+
+
+                h5 Программа (h5)
+                blockquote
+                    p За три месяца работы к нему присоединились более 100 тысяч горожан старшего возраста. Для них организованы бесплатные занятия спортом, творчеством, танцами, пением, рисованием, а также образовательные курсы и игры.
+                    site
+                        | Источник:&nbsp;
+                        a(href='#' target='_blank') https://developer.mozilla.org/
+                p За три месяца работы к нему присоединились более 100 тысяч горожан старшего возраста. Для них организованы бесплатные занятия спортом, творчеством, танцами, пением, рисованием, а также образовательные курсы и игры. На выбор — общая физическая подготовка, скандинавская ходьба, гимнастика информационные технологии, английский язык, курс «Здорово жить» и другие занятия.
+                iframe(width='560', height='315', src='https://www.youtube.com/embed/gLFWRDsx5AI', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+
+                br
+                br
+
+                h3 Центр социального обслуживания (h3)
+
+                p Так, например, весной в столице запущен новый проект «Московское долголетие», который реализуется на базе Центров социального обслуживания.
+
+                ul.wysiwyg__link-list.list-inline
+
+                    li
+                        a(href='#')
+                            | Скачать документ
+                            span.text-black-50 &nbsp;(2,8 Мб)
+
+                    li
+                        a(href='#')
+                            | Скачать документ с очень длинным названием, которое выходит...
+                            span.text-black-50 &nbsp;(299,8 Мб)
+

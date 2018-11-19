@@ -18,6 +18,10 @@
         pointer-events: none;
     }
 
+    &.remove {
+        @include interact(color, $red);
+    }
+
     &.size-sm {
         @include size(2rem);
 

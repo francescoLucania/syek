@@ -9939,7 +9939,7 @@ textarea.form-control {
   }
 }
 
-.carousel-item::after {
+.carousel-item--content::after {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -9950,7 +9950,7 @@ textarea.form-control {
   content: '';
 }
 
-.carousel-item img {
+.carousel-item--content img {
   position: relative;
 }
 
@@ -10155,6 +10155,10 @@ trix-editor {
 .button-icon.disabled {
   opacity: .75;
   pointer-events: none;
+}
+
+.mod_no-touchevents .button-icon.remove:hover, .mod_no-touchevents .button-icon.remove.hover {
+  color: #dc3545;
 }
 
 .button-icon.size-sm {
@@ -10496,4 +10500,124 @@ trix-editor {
 
 .user-profile {
   border: 1px solid #dee2e6;
+}
+
+.wysiwyg h1:not(:first-child),
+.wysiwyg h2:not(:first-child),
+.wysiwyg h3:not(:first-child),
+.wysiwyg h4:not(:first-child),
+.wysiwyg h5:not(:first-child),
+.wysiwyg h6:not(:first-child) {
+  margin-top: 2.4rem;
+}
+
+.wysiwyg > figure > img {
+  display: block;
+  margin: 0 auto;
+}
+
+.wysiwyg > figure > figcaption {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.225rem;
+  color: #adb5bd;
+}
+
+.wysiwyg > blockquote {
+  position: relative;
+  margin: 2.4rem 0;
+  padding-bottom: 3.2rem;
+}
+
+.wysiwyg > blockquote > p,
+.wysiwyg > blockquote > site {
+  color: #adb5bd;
+}
+
+.wysiwyg > blockquote > p {
+  padding: 2.4rem 3.2rem 0;
+  font-size: 2.475rem;
+}
+
+.wysiwyg > blockquote > site {
+  padding: 0 3.2rem 0;
+}
+
+.wysiwyg > blockquote::after, .wysiwyg > blockquote::before {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAcCAYAAAAa/l2sAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgB7ZdBTsJAFIb/IVJd9gj1Bi5tCInVeA7xBHoD6Q3kBPYGLF1pWaiw0xvYI7gW9fmGdAFx2jdOmQXJfElDYF7ol/f3DYN6fFoQtoFCdTo4PjQt8T3e+SXBFuhhxwjCvgnCvgnCvgnCvgnCvgnCvgnCvtnja2ZRl0A6zxI+GpdIvSlFFdqJ+ToSavjYLXBfzpP9viohCBNRfjZMx3DE5pDPsoX4SBxEvQvI/xaqLrIPz/MRbBJcUt4qrLvLnRtDgBTlcGRavsaK1I1UR6BJlqVVq3DUl78IuruDtIAjcfR5hX8k2Cisu8vPzAgCakkZHHFJsFGYB20KAT0EOiY44pKgUbgeAnGL0UMAR2wT/Ca6XH9vFLYaAt7GunSXE7yTanSC58N0tv7ZH+HyZWE1BL0vFHCkTvBELDQkuCG8GoIfXENAD0GX7toliInpHhvC9RAkaKfTNmb1I7FKkG5NC7/Jj4czUaiv2AAAAABJRU5ErkJggg==");
+  content: "";
+}
+
+.wysiwyg > blockquote::before {
+  top: 0;
+  left: 0;
+}
+
+.wysiwyg > blockquote::after {
+  bottom: 0;
+  right: 0;
+}
+
+.wysiwyg__slider {
+  margin: 3.2rem auto;
+}
+
+.wysiwyg__video {
+  display: block;
+  margin: 3.2rem auto;
+  max-width: 72rem;
+}
+
+.wysiwyg__video > div {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.wysiwyg__video > div > iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wysiwyg__link-list {
+  margin: 3.2rem 0;
+  font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  .wysiwyg__link-list {
+    padding-left: 3.2rem;
+  }
+}
+
+.wysiwyg__link-list > li {
+  position: relative;
+  padding-left: 3.2rem;
+}
+
+.wysiwyg__link-list > li:not(:last-child) {
+  margin-bottom: .8rem;
+}
+
+.wysiwyg__link-list > li::before {
+  position: absolute;
+  top: -.6rem;
+  left: 0;
+  display: inline-block;
+  font: normal normal normal 32px/1 "Material Design Icons";
+  font-size: 2.4rem;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  color: #adb5bd;
+  content: "\F219";
 }

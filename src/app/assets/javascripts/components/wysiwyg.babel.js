@@ -25,7 +25,7 @@ if (enable.components.wysiwyg === true) {
     $wysiwyg
         .find('> iframe[src*="vimeo"], > iframe[src*="youtube"]')
         .each(function () {
-            $(this).wrap('<div class="wysiwyg__video"/>');
+            $(this).wrap('<div class="wysiwyg__video"><div>');
         });
 }
 

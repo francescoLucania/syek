@@ -1,181 +1,85 @@
-@charset "UTF-8";
-
-@mixin wysiwyg-indents-sm {
-    &:not(:first-child) {
-        margin-top: 2rem;
-    }
-
-    &:not(:last-child) {
-        margin-bottom: 2rem;
-    }
-}
-
-@mixin wysiwyg-indents-lg {
-    &:not(:first-child) {
-        margin-top: 4rem;
-    }
-
-    &:not(:last-child) {
-        margin-bottom: 4rem;
-    }
-}
-
-@if $enable-wysiwyg == true {
-    .wysiwyg {
-        // Headers
-        > h1,
-        > h2,
-        > h3,
-        > h4,
-        > h5,
-        > h6 {
-            &:not(:first-child) {
-                margin-top: 4rem;
-            }
-
-            &:not(:last-child) {
-                margin-bottom: 2rem;
-            }
+.wysiwyg {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        &:not(:first-child) {
+            margin-top: 2.4rem;
         }
+    }
 
-        // Blockquote
-        > blockquote {
-            @include wysiwyg-indents-lg;
-
-            padding-left: 4rem;
-            border-left: 1px solid $color-minor;
-
-            > p {
-                @include text-lg;
-            }
-
-            > footer {
-                margin-top: 1rem;
-
-                > cite {
-                    // Styles
-                }
-            }
-        }
-
-        // Images
+    > figure {
         > img {
-            @include wysiwyg-indents-lg;
-
             display: block;
+            margin: 0 auto;
+        }
+        > figcaption {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: $font-size-sm;
+            color: $gray-500;
+        }
+    }
+
+    > blockquote {
+        position: relative;
+        margin: 2.4rem 0;
+        padding-bottom: 3.2rem;
+
+        > p,
+        > site {
+            color: $gray-500;
         }
 
-        > figure {
-            @include wysiwyg-indents-lg;
-
-            > img {
-                display: block;
-            }
-
-            > figcaption {
-                margin-top: 1rem;
-                color: $color-muted;
-            }
-        }
-
-        // Lists
-        > dl {
-            @include wysiwyg-indents-sm;
-
-            > dt {
-                margin-bottom: 1rem;
-                font-weight: $font-weight-solid;
-            }
-
-            > dd {
-                // Styles
-            }
-        }
-
-        > ol {
-            list-style: decimal;
-        }
-
-        > ul {
-            list-style: disc;
-        }
-
-        > ol,
-        > ul {
-            ol {
-                list-style: decimal;
-            }
-
-            ul {
-                list-style: disc;
-            }
-
-            @include wysiwyg-indents-sm;
-
-            ol,
-            ul {
-                &:not(:last-child) {
-                    margin-bottom: 1rem;
-                }
-            }
-
-            li {
-                margin-left: 2rem;
-                margin-top: 1rem;
-            }
-        }
-
-        // Paragraphs
         > p {
-            @include wysiwyg-indents-sm;
+            padding: 2.4rem 3.2rem 0;
+            font-size: $font-size-lg;
         }
 
-        // Table
-        &__table {
-            @include wysiwyg-indents-lg;
-
-            overflow-x: auto;
-
-            > table {
-                width: 100%;
-                table-layout: fixed;
-
-                caption {
-                    color: $color-muted;
-                    text-align: right;
-                }
-
-                th {
-                    border-bottom: 1px solid #ccc;
-                    text-align: left;
-                }
-
-                td {
-                    border-bottom: 1px solid #eee;
-                }
-
-                th,
-                td {
-                    padding: {
-                        top: .5rem;
-                        bottom: .5rem;
-                    }
-
-                    &:not(:first-child) {
-                        padding-left: .5rem;
-                    }
-
-                    &:not(:last-child) {
-                        padding-right: .5rem;
-                    }
-                }
-            }
+        > site {
+            padding: 0 3.2rem 0;
         }
 
-        // Video
-        &__video {
-            @include wysiwyg-indents-lg;
+        &::after,
+        &::before {
+            @include size(2.4rem);
 
+            position: absolute;
+            background: {
+                position: 50%;
+                size: contain;
+                repeat: no-repeat;
+                image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAcCAYAAAAa/l2sAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgB7ZdBTsJAFIb/IVJd9gj1Bi5tCInVeA7xBHoD6Q3kBPYGLF1pWaiw0xvYI7gW9fmGdAFx2jdOmQXJfElDYF7ol/f3DYN6fFoQtoFCdTo4PjQt8T3e+SXBFuhhxwjCvgnCvgnCvgnCvgnCvgnCvgnCvtnja2ZRl0A6zxI+GpdIvSlFFdqJ+ToSavjYLXBfzpP9viohCBNRfjZMx3DE5pDPsoX4SBxEvQvI/xaqLrIPz/MRbBJcUt4qrLvLnRtDgBTlcGRavsaK1I1UR6BJlqVVq3DUl78IuruDtIAjcfR5hX8k2Cisu8vPzAgCakkZHHFJsFGYB20KAT0EOiY44pKgUbgeAnGL0UMAR2wT/Ca6XH9vFLYaAt7GunSXE7yTanSC58N0tv7ZH+HyZWE1BL0vFHCkTvBELDQkuCG8GoIfXENAD0GX7toliInpHhvC9RAkaKfTNmb1I7FKkG5NC7/Jj4czUaiv2AAAAABJRU5ErkJggg==');
+            };
+            content: "";
+        }
+
+        &::before {
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    // slider
+    &__slider {
+        margin: 3.2rem auto;
+    }
+
+
+    // Video
+    &__video {
+        display: block;
+        margin: 3.2rem auto;
+        max-width: 72rem;
+
+        > div {
             position: relative;
             padding-bottom: 56.25%; // 16:9
             height: 0;
@@ -186,6 +90,38 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+            }
+        }
+    }
+
+    &__link-list {
+        margin: 3.2rem 0;
+        font-weight: 600;
+
+        @include media-breakpoint-up(sm) {
+            padding-left: 3.2rem;
+        }
+
+        > li {
+            position: relative;
+            padding-left: 3.2rem;
+
+            &:not(:last-child) {
+                margin-bottom: .8rem;
+            }
+
+            &::before {
+                position: absolute;
+                top: -.6rem;
+                left: 0;
+                display: inline-block;
+                font: normal normal normal 32px/1 "Material Design Icons";
+                font-size: 2.4rem;
+                text-rendering: auto;
+                line-height: inherit;
+                -webkit-font-smoothing: antialiased;
+                color: $gray-500;
+                content: "\F219";
             }
         }
     }
