@@ -1,8 +1,8 @@
 #feedback.modal.fade(tabindex='-1' role='dialog' aria-labelledby='feedback' aria-hidden='true')
     .modal-dialog(role='document')
         form.modal-content.p-2.p-md-5
-            .modal-header.p-0.d-block.pb-2
-                h5.modal-title.text-uppercase.mb-2.font-weight-bold Написать пользователю
+            .modal-header.d-block
+                h5.modal-title.mb-3.text-uppercase.font-weight-bold Написать пользователю
                 a.user-card.d-flex.align-items-center(href='#')
                     .user-card-image.mr-2
                         img(src='https://via.placeholder.com/54X54/000000/FFFFFF/?text=Username' alt='username')
@@ -10,7 +10,7 @@
 
                 button.button-icon.modal-close(type='button', data-dismiss='modal' aria-label='Close')
                     i.mdi.mdi-close(aria-hidden='true')
-            .modal-body.py-3
+            .modal-body
 
                 .form-group
                     p.m-0 Все поля обязательны для заполнения.
@@ -21,23 +21,23 @@
                 .form-group.m-0
                     textarea.form-control(placeholder='Текст сообщения)')
 
-            .modal-footer.pt-3.justify-content-start
+            .modal-footer.justify-content-start
                 button.btn.btn-primary.w-100(type='button') Отправить
 
 
 #feedback-2.modal.fade(tabindex='-1' role='dialog' aria-labelledby='feedback' aria-hidden='true')
     .modal-dialog(role='document')
         form.modal-content.p-2.p-md-5
-            .modal-header.p-0.d-block.pb-2
-                h5.modal-title.text-uppercase.mb-2.font-weight-bold Сообщение отправлено
+            .modal-header.d-block
+                h5.modal-title.text-uppercase.font-weight-bold Сообщение отправлено
 
                 button.button-icon.modal-close(type='button', data-dismiss='modal' aria-label='Close')
                     i.mdi.mdi-close(aria-hidden='true')
-            .modal-body.py-3
+            .modal-body
 
                 .form-group.m-0
                     p.m-0 Сообщение отправлено пользователю Avramenko Sergey
 
 
-            .modal-footer.pt-3.justify-content-start
+            .modal-footer.justify-content-start
                 button.btn.btn-primary.w-100(type='button' data-dismiss='modal' aria-label='Close') Закрыть

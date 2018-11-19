@@ -13,7 +13,7 @@ block main
                         ul.list-inline.d-flex.m-0.text-uppercase.lead
                             li.mr-3: a(href='#') Идеи
                             li.mr-3: a(href='#') Организации
-                            li.mr-3: a.active(href='#') Пользователи
+                            li.mr-3: a(href='#') Пользователи
                             li.mr-3: a(href='#') Эксперты
                             li: a(href='#') О регионе
 
@@ -21,6 +21,13 @@ block main
         .container
             .row.justify-content-between
                 .col-12.col-lg-8.col-xl-9
+                    nav.mb-3(aria-label='breadcrumb')
+                        ol.breadcrumb.small
+                            li.breadcrumb-item.active(aria-current='page')
+                                a(href='#') Все идеи
+                            li.breadcrumb-item.active(aria-current='page')
+                                a(href='#') Развитие экономики
+
                     article.content-page
                         header
                             .text-black-50.mb-2 Хабаровская обл. / п. Ванино

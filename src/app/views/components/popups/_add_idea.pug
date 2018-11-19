@@ -1,11 +1,11 @@
 #add-idea.modal.fade(tabindex='-1' role='dialog' aria-labelledby='add idea' aria-hidden='true')
     .modal-dialog.modal-dialog--idea(role='document')
         form.modal-content.p-2.p-md-5
-            .modal-header.p-0.d-block.pb-2
-                h5.modal-title.text-uppercase.mb-2.font-weight-bold Добавить идею
+            .modal-header.d-block
+                h5.modal-title.text-uppercase.font-weight-bold Добавить идею
                 button.button-icon.modal-close(type='button', data-dismiss='modal' aria-label='Close')
                     i.mdi.mdi-close(aria-hidden='true')
-            .modal-body.py-3
+            .modal-body
 
                 .form-group
                     p.m-0 Все поля обязательны для заполнения.
@@ -29,10 +29,10 @@
                     input#x2(type='hidden', name='content' value='Описание идеи')
                     trix-editor(input='x2')
 
-                .form-group
+                .form-group.mb-0.mt-2
                         label.form-group.form-check.mb-0(for='exampleCheck22')
                             input#exampleCheck22.form-check-input(type='checkbox' checked autocomplete='off')
                             span.form-check-label.ml-1 Сообщать о комментариях по e-mail
 
-            .modal-footer.pt-3.justify-content-start
+            .modal-footer.justify-content-start
                 button.btn.btn-primary.w-100(type='button') Отправить

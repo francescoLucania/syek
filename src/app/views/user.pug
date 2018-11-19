@@ -1,0 +1,29 @@
+extends layouts/application
+
+block title
+    title Region
+
+block main
+    section.section.section--background-gray-100.section--not-bottom-gutter
+        .container
+            .no-gutters
+                .col-lg-8
+                    h1.display-1.text-uppercase Хабаровский край
+                    .region-navigate.mt-2
+                        ul.list-inline.d-flex.m-0.text-uppercase.lead
+                            li.mr-3: a.active(href='#') Идеи
+                            li.mr-3: a(href='#') Организации
+                            li.mr-3: a(href='#') Пользователи
+                            li.mr-3: a(href='#') Эксперты
+                            li: a(href='#') О регионе
+
+    div.section.mt-4
+        .container
+            include components/_region_carousel
+
+            .row.justify-content-between.mt-4
+                .col-12.col-lg-8.col-xl-9
+                    .user-profile.p-2.p-sm-3
+
+                include components/_aside
+

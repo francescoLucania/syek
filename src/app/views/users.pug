@@ -1,0 +1,73 @@
+extends layouts/application
+
+block title
+    title Region users
+
+block main
+    section.section.section--background-gray-100.section--not-bottom-gutter
+        .container
+            .no-gutters
+                .col-lg-8
+                    h1.display-1.text-uppercase Хабаровский край
+                    .region-navigate.mt-2
+                        ul.list-inline.d-flex.m-0.text-uppercase.lead
+                            li.mr-3: a(href='#') Идеи
+                            li.mr-3: a(href='#') Организации
+                            li.mr-3: a(href='#') Пользователи
+                            li.mr-3: a(href='#') Эксперты
+                            li: a(href='#') О регионе
+
+    div.section.mt-4
+        .container
+            .row.justify-content-between
+                .col-12.col-lg-8.col-xl-9
+                    nav.mb-3(aria-label='breadcrumb')
+                        ol.breadcrumb.small
+                            li.breadcrumb-item.active(aria-current='page')
+                                a(href='#') Все идеи
+                            li.breadcrumb-item.active(aria-current='page')
+                                a(href='#') Развитие экономики
+                    .tape
+                        .tape-filter
+
+                            ul.list-inline.d-flex
+                                li.mr-2
+                                    .dropdown
+                                        button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                            | По активности
+                                        .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                                            a.dropdown-item(href='#') Action
+                                            a.dropdown-item(href='#') Another action
+                                            a.dropdown-item(href='#') Something else here
+
+
+
+                        .tape-content.mt-4
+                            include components/_users_list
+
+                        nav.mt-4.d-sm-flex.justify-content-between.align-items-start(aria-label='Page navigation example')
+                            ul.pagination.mb-0
+
+                                li.page-item
+                                    a.page-link(href='#') 1
+                                li.page-item
+                                    a.page-link(href='#') 2
+                                li.page-item
+                                    a.page-link(href='#') 3
+
+                                li.page-item
+                                    a.page-link(href='#') ...
+
+                                li.page-item
+                                    a.page-link(href='#') 86
+
+                            .dropdown.mt-sm-2.mt-md-0
+                                button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle.btn-sm(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                    | Показывать 25
+                                .dropdown-menu(aria-labelledby='dropdownMenuButton2')
+                                    a.dropdown-item(href='#') Показывать 5
+                                    a.dropdown-item(href='#') Показывать 15
+                                    a.dropdown-item(href='#') Показывать 20
+
+                include components/_aside
+

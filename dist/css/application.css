@@ -9838,11 +9838,20 @@ a:hover {
   border-radius: 0;
 }
 
-modal-header,
+.modal-header,
 .modal-body,
 .modal-footer {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
+  border: 0;
+}
+
+.modal-header {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-body {
+  margin: 1.6rem 0;
 }
 
 .modal-close {
@@ -10024,6 +10033,10 @@ trix-editor {
   border-right: 1px solid #dee2e6;
 }
 
+.breadcrumb {
+  background: #f8f9fa;
+}
+
 .site-navigate-item > ul > li > a {
   color: #495057;
   font-weight: 500;
@@ -10137,6 +10150,11 @@ trix-editor {
     width: 4.8rem;
     height: 4.8rem;
   }
+}
+
+.button-icon.disabled {
+  opacity: .75;
+  pointer-events: none;
 }
 
 .button-icon.size-sm {
@@ -10474,4 +10492,8 @@ trix-editor {
 .user-card-image.size-lg {
   width: 6.4rem;
   height: 6.4rem;
+}
+
+.user-profile {
+  border: 1px solid #dee2e6;
 }

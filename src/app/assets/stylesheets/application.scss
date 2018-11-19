@@ -39,6 +39,8 @@
 
 @import "overrides/trix";
 
+@import "overrides/breadcrumb";
+
 // jQuery UI
 //@import "components/jquery_ui/core";
 //
@@ -77,3 +79,5 @@
 @import "components/comments";
 
 @import "components/user";
+
+@import "components/user_profile";
