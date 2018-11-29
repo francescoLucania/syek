@@ -1,0 +1,112 @@
+extends layouts/application
+
+block title
+    title News
+
+block main
+    section.section.section--background-gray-100.section--not-bottom-gutter
+        .container
+            .no-gutters
+                .col-lg-8
+                    h1.display-1.text-uppercase Хабаровский край
+                    .region-navigate.mt-2
+                        ul.list-inline.d-flex.m-0.text-uppercase.lead
+                            li.mr-3: a(href='#') Идеи
+                            li.d-none.mr-3: a(href='#') Организации
+                            li.mr-3: a.active(href='#') Новости
+                            li.d-none.mr-3: a(href='#') Эксперты
+                            li: a(href='#') О регионе
+
+    div.section.mt-4
+        .container
+            .row.justify-content-between
+                .col-12.col-lg-8.col-xl-9
+                    .tape
+
+                        .tape-content
+
+                            article.tape-card.p-2.p-sm-3
+                                header.mb-2
+                                    .text-black-50.mb-2 27.11.2018
+                                    h3.font-weight-bold Благоустройство придомовой территории по улице Центральная п. Чегдомын
+                                .wysiwyg.js-wysiwyg
+                                    p Закончено благоустройство придомовой территории ТОС «Добрые дела» МКД 40 по улице Центральная п. Чегдомын. Работы по покраске фасада, ремонту цоколя, крылец, обустройству детской, спортивной площадок, зоны отдыха проведены в рамках реализации мастер - плана и за счёт средств фонда « СУЭК - Регионам».
+
+                                footer.mt-3
+                                    .d-sm-flex.justify-content-between.mt-2.pt-2.border-top
+
+                                        .small
+                                            a(href='#') Востряков Анатолий
+                                            | &nbsp;разместил(а) 25.06.2018
+
+                            article.tape-card.p-2.p-sm-3
+                                header.mb-2
+                                    .text-black-50.mb-2 27.11.2018
+                                    h3.font-weight-bold Участие школьников в профильной смене «МОНОГОРОДА» в г. Анапа
+                                    .wysiwyg.js-wysiwyg
+                                        p Двое школьников, призеров краевых конкурсов и олимпиад по робототехнике, учащихся Многопрофильного лицея» п. Чегдомын приняли участие в профильной смене «МОНОГОРОДА» во ВДЦ «Смена» г. Анапа с 09 по 22 ноября 2018 года по специализации Ворлдскиллс юниоры России «Дизайн и сервис компьютерных программ». Также они приняли участие в сдаче норм ГТО, сыграли в волейбол, баскетбол, дартс, настольный теннис, написали географический диктант.
+
+                                footer.mt-3
+                                    .d-sm-flex.justify-content-between.mt-2.pt-2.border-top
+
+                                        .small
+                                            a(href='#') Востряков Анатолий
+                                            | &nbsp;разместил(а) 27.11.2018
+
+                            article.tape-card.p-2.p-sm-3
+                                header.mb-2
+                                    .text-black-50.mb-2 27.11.2018
+                                    h3.font-weight-bold Воздушное сообщение Хабаровск-Чегдомын-Хабаровск
+                                    .wysiwyg
+                                        figure
+                                            img(src='img/news.jpg', alt='image title')
+                                        p В ноябре открыто воздушное сообщение Хабаровск-Чегдомын-Хабаровск. Самолёт КГУП «Хабавиа» совершает рейсы дважды в неделю, по вторникам и четвергам. Стоимость билета 3500 руб. На переговорах с руководством «Хабавиа» принято решение о бесплатном бронировании билетов. Так же уже закуплено и монтируется навигационное оборудование, которое позволит добиться регулярности рейсов.
+
+                                footer.mt-3
+                                    .d-sm-flex.justify-content-between.mt-2.pt-2.border-top
+
+                                        .small
+                                            a(href='#') Востряков Анатолий
+                                            | &nbsp;разместил(а) 27.11.2018
+
+                            article.tape-card.p-2.p-sm-3
+                                header.mb-2
+                                    .text-black-50.mb-2 26.11.2018
+                                    h3.font-weight-bold Благотворительный марафон. От всех каждому.
+                                    .wysiwyg.js-wysiwyg
+                                        p 16 ноября прошёл первый благотворительный вечер, который дал старт благотворительному марафону «Делаем добро вместе». Вечер имел закрытый формат. Приглашение получили представители законодательной и исполнительной власти посёлка и района, руководители АО «Ургалуголь», представители малого бизнеса. На вечере прошёл сбор средств на оплату лечения и реабилитации в ДФУ г. Владивостока на острове Русский 35 летнего  Евгения Ушакова, прикованного к кровати после черепно-мозговой травмы.На вечере было собрано 250 тыс. руб. Далее в течение недели распространения социального ролика в сети Интернет было собрано более 500 тыс. руб. Этой суммы достаточно для лечения Евгения. Марафон продлится до 16 декабря. В помощи ещё нуждаются 16 инвалидов проживающих на территории посёлка Чегдомын и в других посёлках.
+                                        iframe(width='560', height='315', src='https://www.youtube.com/embed/BwKLo9sAiNc', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+
+                                footer.mt-3
+                                    .d-sm-flex.justify-content-between.mt-2.pt-2.border-top
+                                        .small
+                                            a(href='#') Востряков Анатолий
+                                            | &nbsp;разместил(а) 26.11.2018
+
+
+                        //nav.mt-4.d-sm-flex.justify-content-between.align-items-start(aria-label='Page navigation example')
+                        //    ul.pagination.mb-0
+                        //
+                        //        li.page-item
+                        //            a.page-link(href='#') 1
+                        //        li.page-item
+                        //            a.page-link(href='#') 2
+                        //        li.page-item
+                        //            a.page-link(href='#') 3
+                        //
+                        //        li.page-item
+                        //            a.page-link(href='#') ...
+                        //
+                        //        li.page-item
+                        //            a.page-link(href='#') 86
+
+                            .dropdown.mt-2.mt-md-0
+                                button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle.btn-sm(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                    | Показывать 25
+                                .dropdown-menu(aria-labelledby='dropdownMenuButton2')
+                                    a.dropdown-item(href='#') Показывать 5
+                                    a.dropdown-item(href='#') Показывать 15
+                                    a.dropdown-item(href='#') Показывать 20
+
+                include components/_aside
+

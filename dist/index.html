@@ -16,13 +16,13 @@
     <header class="site-header">
       <div class="container">
         <nav class="site-navigate d-flex justify-content-between">
-          <div class="site-navigate-item d-flex align-items-center py-2 py-md-3"><a class="header-logo mr-3" href="#"><img src="img/suek-logo-ru.svg" alt=""></a>
+          <div class="site-navigate-item d-flex align-items-center py-2 py-md-3"><a class="header-logo mr-3" href="#"><img src="img/logo.svg" alt=""></a>
             <ul class="list-inline text-uppercase d-none mb-0 d-lg-flex">
               <li><a class="mr-2" href="#">О проекте</a></li>
-              <li><a class="mr-2" href="#">Новости</a></li>
+              <li class="d-none"><a class="mr-2" href="#">Новости</a></li>
               <li><a class="mr-2" href="#">Правила</a></li>
               <li><a class="mr-2" href="#">Помощь</a></li>
-              <li><a href="#">Регионы</a></li>
+              <li class="d-none"><a href="#">Регионы</a></li>
             </ul>
           </div>
           <div class="site-navigate-item d-flex align-items-center d-lg-none">
@@ -36,10 +36,10 @@
           <div class="site-navigate-item">
             <ul class="list-inline text-uppercase mb-0">
               <li class="mb-1"><a href="#">О проекте</a></li>
-              <li class="mb-1"><a href="#">Новости</a></li>
+              <li class="d-none mb-1"><a href="#">Новости</a></li>
               <li class="mb-1"><a href="#">Правила</a></li>
               <li class="mb-1"><a href="#">Помощь</a></li>
-              <li><a href="#">Регионы</a></li>
+              <li class="d-none"><a href="#">Регионы</a></li>
             </ul>
             <div class="site-navigate-item d-flex justify-content-between align-items-center mt-3">
               <button class="site-navigate-login-and-registration" type="button" data-toggle="modal" data-target="#login-popup">Вход и регистрация</button><a class="button-icon ml-3" href="#">Поиск<i class="mdi mdi-magnify"></i></a>
@@ -54,7 +54,7 @@
           <div class="no-gutters">
             <div class="col-lg-8">
               <h2 class="display-1 text-uppercase">Общественный форум</h2>
-              <p class="lead text-black-50">Система взаимодействия представителей госструктур с гражданами,<br class='d-none d-lg-block'> с целью вовлечения граждан в решение социально-важных задач<br class='d-none d-lg-block'> и оценки мастер-планов развития регионов СУЭК:</p>
+              <p class="lead text-black-50">Платформа для взаимодействия граждан, представителей предпринимательского сообщества и региональных госструктур для реализации социально значимых задач, обсуждения инициатив и оценки мастер-планов по развитию моногородов. Будущее территорий зависит от нас!</p>
             </div>
           </div>
         </div>
@@ -63,86 +63,92 @@
             <div class="row region-row">
               <div class="region-col col-sm-6 col-md-6 col-lg-4 col-xl-3"><a class="region-card d-block p-2 p-sm-3" href="#">
                   <div class="d-flex justify-content-between align-items-start mb-1">
+                    <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Хабаровский<br>край</h3><img src="img/regions/khab-krai.png" alt="Регион">
+                  </div>
+                  <div class="mb-2">1 населённых пункт</div>
+                  <div class="small text-black-50">
+                    <ul class="list-inline">
+                      <li>Население — 11 960</li>
+                      <li>Идей на обсуждении - 1</li>
+                      <li>Реализовано идей - 1</li>
+                      <li>Активных голосований - 1</li>
+                    </ul>
+                  </div></a></div>
+              <div class="region-col col-sm-6 col-md-6 col-lg-4 col-xl-3"><a class="region-card d-block p-2 p-sm-3 disabled" href="#">
+                  <div class="d-flex justify-content-between align-items-start mb-1">
                     <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Республика<br>Бурятия</h3><img src="img/regions/buryatiya.png" alt="Регион">
                   </div>
-                  <div class="mb-2">7 населённых пунктов</div>
+                  <div class="mb-2">1 населённых пункт</div>
                   <div class="small text-black-50">
                     <ul class="list-inline">
-                      <li>Население — 984</li>
-                      <li>511 Разрезов и шахт — 2</li>
-                      <li>Фабрик и установок — 1</li>
+                      <li>Население - 3985</li>
+                      <li>Идей на обсуждении - 0</li>
+                      <li>Реализовано идей - 0</li>
+                      <li>Активных голосований - 0</li>
                     </ul>
                   </div></a></div>
-              <div class="region-col col-sm-6 col-md-6 col-lg-4 col-xl-3"><a class="region-card d-block p-2 p-sm-3" href="#">
-                  <div class="d-flex justify-content-between align-items-start mb-1">
-                    <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Республика<br>Бурятия</h3><img src="img/regions/Coat_of_arms_of_Kemerovo_Oblast.png" alt="Регион">
-                  </div>
-                  <div class="mb-2">7 населённых пунктов</div>
-                  <div class="small text-black-50">
-                    <ul class="list-inline">
-                      <li>Население — 984</li>
-                      <li>511 Разрезов и шахт — 2</li>
-                      <li>Фабрик и установок — 1</li>
-                    </ul>
-                  </div></a></div>
-              <div class="region-col col-sm-6 col-md-6 col-lg-4 col-xl-3"><a class="region-card d-block p-2 p-sm-3" href="#">
+              <div class="region-col col-sm-6 col-md-6 col-lg-4 col-xl-3"><a class="region-card d-block p-2 p-sm-3 disabled" href="#">
                   <div class="d-flex justify-content-between align-items-start mb-1">
                     <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Красноярский<br>край</h3><img src="img/regions/krasnoyarsk_krai.png" alt="Регион">
                   </div>
-                  <div class="mb-2">7 населённых пунктов</div>
+                  <div class="mb-2">3 населённых пункта</div>
                   <div class="small text-black-50">
                     <ul class="list-inline">
-                      <li>Население — 984</li>
-                      <li>511 Разрезов и шахт — 2</li>
-                      <li>Фабрик и установок — 1</li>
-                    </ul>
-                  </div></a></div>
-              <div class="region-col col-sm-6 col-md-6 col-lg-4 col-xl-3"><a class="region-card d-block p-2 p-sm-3" href="#">
-                  <div class="d-flex justify-content-between align-items-start mb-1">
-                    <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Приморский<br>край</h3><img src="img/regions/primorsky_krai.png" alt="Регион">
-                  </div>
-                  <div class="mb-2">7 населённых пунктов</div>
-                  <div class="small text-black-50">
-                    <ul class="list-inline">
-                      <li>Население — 984</li>
-                      <li>511 Разрезов и шахт — 2</li>
-                      <li>Фабрик и установок — 1</li>
+                      <li>Население - 67548</li>
+                      <li>Идей на обсуждении - 0</li>
+                      <li>Реализовано идей - 0</li>
+                      <li>Активных голосований - 0x</li>
                     </ul>
                   </div></a></div>
               <div class="region-col col-sm-6 col-md-6 col-lg-4 col-xl-3"><a class="region-card d-block p-2 p-sm-3 disabled" href="#">
                   <div class="d-flex justify-content-between align-items-start mb-1">
-                    <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Краснодарский<br>край</h3><img src="img/regions/krasnoyarsk_krai.png" alt="Регион">
+                    <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Кемеровская<br>область</h3><img src="img/regions/Coat_of_arms_of_Kemerovo_Oblast.png" alt="Регион">
                   </div>
-                  <div class="mb-2">7 населённых пунктов</div>
+                  <div class="mb-2">3 населённых пунктa</div>
                   <div class="small text-black-50">
                     <ul class="list-inline">
-                      <li>Население — 984</li>
-                      <li>511 Разрезов и шахт — 2</li>
-                      <li>Фабрик и установок — 1</li>
-                    </ul>
-                  </div></a></div>
-              <div class="region-col col-sm-6 col-md-6 col-lg-4 col-xl-3"><a class="region-card d-block p-2 p-sm-3 disabled" href="#">
-                  <div class="d-flex justify-content-between align-items-start mb-1">
-                    <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Хабаровский<br>край</h3><img src="img/regions/khab-krai.png" alt="Регион">
-                  </div>
-                  <div class="mb-2">7 населённых пунктов</div>
-                  <div class="small text-black-50">
-                    <ul class="list-inline">
-                      <li>Население — 984</li>
-                      <li>511 Разрезов и шахт — 2</li>
-                      <li>Фабрик и установок — 1</li>
+                      <li>Население — 384307</li>
+                      <li>511 Разрезов и шахт — 0</li>
+                      <li>Фабрик и установок — 0</li>
                     </ul>
                   </div></a></div>
               <div class="region-col col-sm-6 col-md-6 col-lg-4 col-xl-3"><a class="region-card d-block p-2 p-sm-3 disabled" href="#">
                   <div class="d-flex justify-content-between align-items-start mb-1">
                     <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Забайкальский<br>Край</h3><img src="img/regions/zabaikal-krai.jpg" alt="Регион">
                   </div>
-                  <div class="mb-2">7 населённых пунктов</div>
+                  <div class="mb-2">3 населённых пункта</div>
                   <div class="small text-black-50">
                     <ul class="list-inline">
-                      <li>Население — 984</li>
-                      <li>511 Разрезов и шахт — 2</li>
-                      <li>Фабрик и установок — 1</li>
+                      <li>Население - 17022</li>
+                      <li>Идей на обсуждении - 0</li>
+                      <li>Реализовано идей - 0</li>
+                      <li>Активных голосований - 0</li>
+                    </ul>
+                  </div></a></div>
+              <div class="region-col col-sm-6 col-md-6 col-lg-4 col-xl-3"><a class="region-card d-block p-2 p-sm-3 disabled" href="#">
+                  <div class="d-flex justify-content-between align-items-start mb-1">
+                    <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Приморский<br>край:</h3><img src="img/regions/primorsky_krai.png" alt="Регион">
+                  </div>
+                  <div class="mb-2">1 населённых пункт</div>
+                  <div class="small text-black-50">
+                    <ul class="list-inline">
+                      <li>Население - 3647</li>
+                      <li>Идей на обсуждении - 0</li>
+                      <li>Реализовано идей - 0</li>
+                      <li>Активных голосований - 0</li>
+                    </ul>
+                  </div></a></div>
+              <div class="region-col col-sm-6 col-md-6 col-lg-4 col-xl-3"><a class="region-card d-block p-2 p-sm-3 disabled" href="#">
+                  <div class="d-flex justify-content-between align-items-start mb-1">
+                    <h3 class="h5 region-card-title py-1 mb-2 font-weight-bold text-uppercases">Республика<br>Хакасия:</h3><img src="img/regions/hakassia.png" alt="Регион">
+                  </div>
+                  <div class="mb-2">3 населённых пункта</div>
+                  <div class="small text-black-50">
+                    <ul class="list-inline">
+                      <li>Население - 86312</li>
+                      <li>Идей на обсуждении - 0</li>
+                      <li>Реализовано идей - 0</li>
+                      <li>Активных голосований - 0</li>
                     </ul>
                   </div></a></div>
             </div>
@@ -152,9 +158,8 @@
     </main>
     <footer class="site-footer pt-3">
       <div class="container">
-        <p class="site-footer-content mb-2">© Общественный форум СУЭК,
+        <p class="site-footer-content mb-2">© Общественный форум,
           <script>document.write(new Date().getFullYear());</script>.
-          Работает на платформе<a href="#" target="_blank">&nbsp;Conceptor</a>
         </p>
         <div class="site-footer-line d-flex">
           <div class="col-4"></div>

@@ -2,7 +2,7 @@
 <html class="mod_no-js" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Region</title>
+    <title>User</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -16,13 +16,13 @@
     <header class="site-header">
       <div class="container">
         <nav class="site-navigate d-flex justify-content-between">
-          <div class="site-navigate-item d-flex align-items-center py-2 py-md-3"><a class="header-logo mr-3" href="#"><img src="img/suek-logo-ru.svg" alt=""></a>
+          <div class="site-navigate-item d-flex align-items-center py-2 py-md-3"><a class="header-logo mr-3" href="#"><img src="img/logo.svg" alt=""></a>
             <ul class="list-inline text-uppercase d-none mb-0 d-lg-flex">
               <li><a class="mr-2" href="#">О проекте</a></li>
-              <li><a class="mr-2" href="#">Новости</a></li>
+              <li class="d-none"><a class="mr-2" href="#">Новости</a></li>
               <li><a class="mr-2" href="#">Правила</a></li>
               <li><a class="mr-2" href="#">Помощь</a></li>
-              <li><a href="#">Регионы</a></li>
+              <li class="d-none"><a href="#">Регионы</a></li>
             </ul>
           </div>
           <div class="site-navigate-item d-flex align-items-center d-lg-none">
@@ -36,10 +36,10 @@
           <div class="site-navigate-item">
             <ul class="list-inline text-uppercase mb-0">
               <li class="mb-1"><a href="#">О проекте</a></li>
-              <li class="mb-1"><a href="#">Новости</a></li>
+              <li class="d-none mb-1"><a href="#">Новости</a></li>
               <li class="mb-1"><a href="#">Правила</a></li>
               <li class="mb-1"><a href="#">Помощь</a></li>
-              <li><a href="#">Регионы</a></li>
+              <li class="d-none"><a href="#">Регионы</a></li>
             </ul>
             <div class="site-navigate-item d-flex justify-content-between align-items-center mt-3">
               <button class="site-navigate-login-and-registration" type="button" data-toggle="modal" data-target="#login-popup">Вход и регистрация</button><a class="button-icon ml-3" href="#">Поиск<i class="mdi mdi-magnify"></i></a>
@@ -69,39 +69,6 @@
       </section>
       <div class="section mt-4">
         <div class="container">
-          <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item carousel-item--content active"><img class="d-block w-100" src="img/region-slider/1.jpg" alt="First slide">
-                <div class="region-carousel-content-box">
-                  <article class="text-white text-center">
-                    <div class="lead mb-1 mb-md-3 font-weight-bold">Новая идея</div>
-                    <h2 class="display-2 mb-1 mb-md-3">Программа открытых дверей центров обслуживания Open Day Program at Social Service</h2><a class="btn btn-primary" href="#">Проголосовать</a>
-                  </article>
-                </div>
-              </div>
-              <div class="carousel-item carousel-item--content"><img class="d-block w-100" src="img/region-slider/2.jpg" alt="Second slide">
-                <div class="region-carousel-content-box">
-                  <article class="text-white text-center">
-                    <div class="lead mb-1 mb-md-3 font-weight-bold">Новая идея</div>
-                    <h2 class="display-2 mb-1 mb-md-3">Программа открытых дверей центров обслуживания Open Day Program at Social Service</h2><a class="btn btn-primary" href="#">Проголосовать</a>
-                  </article>
-                </div>
-              </div>
-              <div class="carousel-item carousel-item--content"><img class="d-block w-100" src="img/region-slider/3.jpg" alt="Third slide">
-                <div class="region-carousel-content-box">
-                  <article class="text-white text-center">
-                    <div class="lead mb-1 mb-md-3 font-weight-bold">Новая идея</div>
-                    <h2 class="display-2 mb-1 mb-md-3">Программа открытых дверей центров обслуживания Open Day Program at Social Service</h2><a class="btn btn-primary" href="#">Проголосовать</a>
-                  </article>
-                </div>
-              </div>
-            </div><a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><i class="mdi mdi-chevron-left" aria-hidden="true"></i>Previous</a><a class="carousel-control-next icon" href="#carouselExampleIndicators" role="button" data-slide="next"><i class="mdi mdi-chevron-right" aria-hidden="true"></i><span class="sr-only"></span>Next</a>
-          </div>
           <div class="row justify-content-between mt-4">
             <div class="col-12 col-lg-8 col-xl-9">
               <div class="user-profile p-2 p-sm-3"></div>
@@ -115,10 +82,11 @@
                   <li class="mb-1"><a href="#">Новый Ургал</a></li>
                   <li class="mb-1"><a href="#">п. Чегдомын</a></li>
                 </ul>
-                <hr class="my-3 ml-0 my-md-4 ml-md-auto text-primary" style="width: 3rem; border: 1px solid">
-                <h5 class="text-uppercase text-black-50 font-weight-bold">У вас есть идея?</h5>
-                <p class="mb-3 text-black-50">Lorem ipsum dolor sit amet, consectetur&nbsp;adipiscing&nbsp;elit:</p>
-                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#add-idea">Добавить идею</button>
+                <!--hr.my-3.ml-0.my-md-4.ml-md-auto.text-primary(style='width: 3rem; border: 1px solid')-->
+                <!---->
+                <!--h5.text-uppercase.text-black-50.font-weight-bold У вас есть идея?-->
+                <!--p.mb-3.text-black-50 Lorem ipsum dolor sit amet, consectetur&nbsp;adipiscing&nbsp;elit:-->
+                <!--button.btn.btn-primary(type='button' data-toggle="modal" data-target="#add-idea") Добавить идею-->
                 <hr class="my-3 ml-0 my-md-4 ml-md-auto mr-md-auto d-md-block text-primary" style="width: 3rem; border: 1px solid">
                 <h5 class="text-uppercase text-black-50 font-weight-bold">Расскажите друзьям</h5>
                 <p class="mb-3 text-black-50">Поделитесь ссылкой&nbsp;на&nbsp;эту&nbsp;страницу:</p>
@@ -131,9 +99,8 @@
     </main>
     <footer class="site-footer pt-3">
       <div class="container">
-        <p class="site-footer-content mb-2">© Общественный форум СУЭК,
+        <p class="site-footer-content mb-2">© Общественный форум,
           <script>document.write(new Date().getFullYear());</script>.
-          Работает на платформе<a href="#" target="_blank">&nbsp;Conceptor</a>
         </p>
         <div class="site-footer-line d-flex">
           <div class="col-4"></div>

@@ -12,9 +12,9 @@ block main
                     .region-navigate.mt-2
                         ul.list-inline.d-flex.m-0.text-uppercase.lead
                             li.mr-3: a.active(href='#') Идеи
-                            li.mr-3: a(href='#') Организации
-                            li.mr-3: a(href='#') Пользователи
-                            li.mr-3: a(href='#') Эксперты
+                            li.d-none.mr-3: a(href='#') Организации
+                            li.mr-3: a(href='#') Новости
+                            li.d-none.d-none.mr-3: a(href='#') Эксперты
                             li: a(href='#') О регионе
 
     div.section.mt-4
@@ -54,52 +54,16 @@ block main
 
                             article.tape-card.p-2.p-sm-3
                                 header.mb-2
-                                    .text-black-50.mb-2 Хабаровская обл. / п. Ванино
-                                    h3.font-weight-bold Тестовое обсуждение идеи
-                                p Тестово обсуждаем
-                                .tape-card-actions.mt-3.row
-                                    .col-6: a.btn.btn-outline-primary.btn-block.disabled(href='#') Поддерживаю
-                                    .col-6: a.btn.btn-outline-primary.btn-block.disabled(href='#') Против
-                                footer.mt-3
-                                    .text-sm-center.font-weight-bold.small На модерации
-                                    .d-sm-flex.justify-content-between.mt-2.pt-2.border-top
+                                    .text-black-50.mb-2 Хабаровская обл. / п. Чегдомын
+                                    h3.font-weight-bold
+                                        a(href='#') Благоустройство парка «Семейный» по ул. Парковая
 
-                                        .small
-                                            a(href='#') Avramenko Sergei
-                                            | &nbsp;разместил(а) 25.06.2018
-
-                                        .small.text-sm-right
-                                            span.text-secondary Нет комментариев
-
-                            article.tape-card.p-2.p-sm-3
-                                header.mb-2
-                                    .text-black-50.mb-2 Хабаровская обл. / п. Ванино
-                                    h3.font-weight-bold Программа дней открытых дверей в Центрах социального обслуживания Open Day Program at&nbsp;Social&nbsp;Service
-                                p К этой дате планируется приурочить проведение Дней открытых дверей в Центрах социального обслуживания населения столицы.
-                                .tape-card-actions.mt-3.row
-                                    .col-6: a.btn.btn-outline-primary.btn-block(href='#') Поддерживаю
-                                    .col-6: a.btn.btn-outline-primary.btn-block(href='#') Против
-                                footer.mt-3
-                                    .text-sm-center.font-weight-bold.small 0 поддержало — против 0
-                                    .d-sm-flex.justify-content-between.mt-2.pt-2.border-top
-
-                                        .small
-                                            a(href='#') Avramenko Sergei
-                                            | &nbsp;разместил(а) 25.06.2018
-
-                                        .small.text-sm-right
-                                            a(href='#') 2 комментария
-
-                            article.tape-card.p-2.p-sm-3
-                                header.mb-2
-                                    .text-black-50.mb-2 Хабаровская обл. / п. Ванино
-                                    h3.font-weight-bold День открытых дверей в Центрах социального обслуживания Open&nbsp;Day&nbsp;Program
-                                p День пожилых людей отмечается во всем мире с 1 октября 1991 года. В Москве это праздник для людей старшего поколения. К этой дате планируется приурочить проведение Дней открытых дверей в Центрах социального обслуживания населения столицы. Социальная поддержка старшего... <a href='#'>Узнать больше</a>
+                                p Благоустройство парка «Семейный» по ул. Парковая. С 2013 года проводятся различные работы в парке по социальным проектам. Много сделано для того, чтобы парк стал центром жизни в посёлке. Как Вы считаете, в каком направлении нужно продолжать работы по благоустройству? <a href='#'>Узнать больше</a>
                                 .tape-card-actions.mt-3
-                                    a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') День пожилых людей отмечается во всем мире
-                                    a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') В Москве это праздник для людей
-                                    a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') К этой дате планируется приурочить День открытых дверей
-                                    a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') Социальная поддержка старшего поколения и ветеранов
+                                    a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') Организовать детскую зону
+                                    a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') Кинотеатр под открытым небом
+                                    a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') Обустроить пешеходные дорожки
+                                    a.btn.btn-outline-primary.btn-block.mb-2(href='#' style='white-space: normal') Заменить покрытие
                                 footer.mt-3
                                     .text-sm-center.font-weight-bold.small Всего 42 голоса
                                     .d-sm-flex.justify-content-between.mt-2.pt-2.border-top
@@ -111,82 +75,175 @@ block main
                                         .small.text-sm-right
                                             a(href='#') 2 комментария
 
+
                             article.tape-card.p-2.p-sm-3
                                 header.mb-2
-                                    .text-black-50.mb-2 Хабаровская обл. / п. Ванино
-                                    h3.font-weight-bold День открытых дверей в Центрах социального обслуживания Open&nbsp;Day&nbsp;Program
-                                p День пожилых людей отмечается во всем мире с 1 октября 1991 года. В Москве это праздник для людей старшего поколения. К этой дате планируется приурочить проведение Дней открытых дверей в Центрах социального обслуживания населения столицы. Социальная поддержка старшего... <a href='#'>Узнать больше</a>
+                                    .text-black-50.mb-2 Хабаровская обл. / . Чегдомын
+                                    h3.font-weight-bold
+                                        a(href='idea.html') Строительство горнолыжного спуска в районе реки Сатанки
+                                p Строительство горнолыжного спуска в районе реки Сатанки. Сейчас там действует лыжня для любителей зимних видов спорта. Ранее предприниматель из п. Чегдомын изъявлял желание взять данный земельный участок в аренду по программе «Дальневосточный гектар», но отсутствие энергоснабжения его остановило. Как считаете, нужен ли в п. Чегдомын горнолыжный спуск, будет ли услуга пользоваться спросом?
 
-
-                                .tape-card-actions.mt-3
-
-                                    .mb-2
-                                        p.text-black-50 День пожилых людей отмечается во всем мире
-                                        .d-flex.align-items-center
-                                            .progress.flex-grow-1
-                                                .progress-bar(role='progressbar', style='width: 30%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
-
-                                            .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
-                                                | 30%
-                                                span.text-black-50 &nbsp;(13)
-
-                                    .mb-2
-                                        p.text-black-50 В Москве это праздник для людей
-                                        .d-flex.d-flex.align-items-center
-                                            .progress.flex-grow-1
-                                                .progress-bar(role='progressbar', style='width: 41%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
-                                            .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
-                                                | 41%
-                                                span.text-black-50 &nbsp;(18)
-
-                                    .mb-2
-                                        p.text-black-50 К этой дате планируется приурочить День открытых дверей
-                                        .d-flex.align-items-center
-                                            .progress.flex-grow-1
-                                                .progress-bar(role='progressbar', style='width: 13%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
-                                            .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
-                                                | 13%
-                                                span.text-black-50 &nbsp;(6)
-
-                                    .mb-2
-                                        p.text-black-50 Социальная поддержка старшего поколения и ветеранов
-                                        .d-flex.align-items-center
-                                            .progress.flex-grow-1
-                                                .progress-bar(role='progressbar', style='width: 13%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
-                                            .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
-                                                | 13%
-                                                span.text-black-50 &nbsp;(6)
+                                .mt-3.row
+                                    .col-6: a.btn.btn-outline-primary.btn-block(href='#') Поддерживаю
+                                    .col-6: a.btn.btn-outline-primary.btn-block(href='#') Против
 
                                 footer.mt-3
-                                    .text-sm-center
-                                        small.font-weight-bold.text-black-50
-                                            | Вы ответили: «В Москве это праздник для людей».
-                                            a(href='#') &nbsp;Отменить решение
-                                    .d-sm-flex.justify-content-between.mt-2.pt-2.border-top
+                                    .mt-3
+                                        .mb-2
+                                            p.text-black-50 За
+                                            .d-flex.align-items-center
+                                                .progress.flex-grow-1
+                                                    .progress-bar(role='progressbar', style='width: 30%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
 
-                                        .small
-                                            a(href='#') Кемеровская область
-                                            | &nbsp;разместил(а) 25.06.2018
+                                                .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
+                                                    | 30%
+                                                    span.text-black-50 &nbsp;(13)
 
-                                        .small.text-sm-right
-                                            a(href='#') 2 комментария
+                                        .mb-2
+                                            p.text-black-50 Против
+                                            .d-flex.d-flex.align-items-center
+                                                .progress.flex-grow-1
+                                                    .progress-bar(role='progressbar', style='width: 41%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                                .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
+                                                    | 41%
+                                                    span.text-black-50 &nbsp;(18)
 
 
-                        nav.mt-4.d-sm-flex.justify-content-between.align-items-start(aria-label='Page navigation example')
-                            ul.pagination.mb-0
+                            article.tape-card.p-2.p-sm-3
+                                header.mb-2
+                                    .text-black-50.mb-2 Хабаровская обл. / . Чегдомын
+                                    h3.font-weight-bold
+                                        a(href='idea.html') Благоустройство прилегающей территории кинотеатра «Ургал»
 
-                                li.page-item
-                                    a.page-link(href='#') 1
-                                li.page-item
-                                    a.page-link(href='#') 2
-                                li.page-item
-                                    a.page-link(href='#') 3
+                                p Благоустройство прилегающей территории кинотеатра «Ургал». Всем известно, что единственный в районе кинотеатр прошёл масштабное переоборудование, позволяющее смотреть фильмы в день премьер в формате 3D. Летом на территории кинотеатра работает детская площадка с надувными батутами. Установлено ограждение от проезда автомобилей, скамейки, МАФ. Если территорию, которая сейчас асфальтирована изменить, и выложить брусчаткой, отдыхать в этом месте будет намного приятнее и комфортнее. Проголосовали бы вы за благоустройство данной территории по программе ППМИ, где необходимо участие жителей в денежной форме? Напомним, что в том числе по данной программе в 2018 году реконструирована площадь им. Блюхера в п. Чегдомын.
 
-                                li.page-item
-                                    a.page-link(href='#') ...
+                                footer.mt-3
+                                    .mt-3
+                                        .text-sm-center
+                                            small.font-weight-bold Реализовано
 
-                                li.page-item
-                                    a.page-link(href='#') 86
+                                        .mb-2
+                                            p.text-black-50 За
+                                            .d-flex.align-items-center
+                                                .progress.flex-grow-1
+                                                    .progress-bar(role='progressbar', style='width: 78%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
+
+                                                .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
+                                                    | 99%
+                                                    span.text-black-50 &nbsp;(78)
+
+                                        .mb-2
+                                            p.text-black-50 Против
+                                            .d-flex.d-flex.align-items-center
+                                                .progress.flex-grow-1
+                                                    .progress-bar(role='progressbar', style='width: 41%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                                                .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
+                                                    | 1%
+                                                    span.text-black-50 &nbsp;(2)
+
+
+
+
+                            //article.tape-card.p-2.p-sm-3
+                            //    header.mb-2
+                            //        .text-black-50.mb-2 Хабаровская обл. / п. Ванино
+                            //        h3.font-weight-bold Программа дней открытых дверей в Центрах социального обслуживания Open Day Program at&nbsp;Social&nbsp;Service
+                            //    p К этой дате планируется приурочить проведение Дней открытых дверей в Центрах социального обслуживания населения столицы.
+                            //    .tape-card-actions.mt-3.row
+                            //        .col-6: a.btn.btn-outline-primary.btn-block(href='#') Поддерживаю
+                            //        .col-6: a.btn.btn-outline-primary.btn-block(href='#') Против
+                            //    footer.mt-3
+                            //        .text-sm-center.font-weight-bold.small 0 поддержало — против 0
+                            //        .d-sm-flex.justify-content-between.mt-2.pt-2.border-top
+                            //
+                            //            .small
+                            //                a(href='#') Avramenko Sergei
+                            //                | &nbsp;разместил(а) 25.06.2018
+                            //
+                            //            .small.text-sm-right
+                            //                a(href='#') 2 комментария
+
+
+                            //article.tape-card.p-2.p-sm-3
+                            //    header.mb-2
+                            //        .text-black-50.mb-2 Хабаровская обл. / п. Ванино
+                            //        h3.font-weight-bold День открытых дверей в Центрах социального обслуживания Open&nbsp;Day&nbsp;Program
+                            //    p День пожилых людей отмечается во всем мире с 1 октября 1991 года. В Москве это праздник для людей старшего поколения. К этой дате планируется приурочить проведение Дней открытых дверей в Центрах социального обслуживания населения столицы. Социальная поддержка старшего... <a href='#'>Узнать больше</a>
+                            //
+                            //
+                            //    .tape-card-actions.mt-3
+                            //
+                            //        .mb-2
+                            //            p.text-black-50 День пожилых людей отмечается во всем мире
+                            //            .d-flex.align-items-center
+                            //                .progress.flex-grow-1
+                            //                    .progress-bar(role='progressbar', style='width: 30%', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
+                            //
+                            //                .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
+                            //                    | 30%
+                            //                    span.text-black-50 &nbsp;(13)
+                            //
+                            //        .mb-2
+                            //            p.text-black-50 В Москве это праздник для людей
+                            //            .d-flex.d-flex.align-items-center
+                            //                .progress.flex-grow-1
+                            //                    .progress-bar(role='progressbar', style='width: 41%', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100')
+                            //                .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
+                            //                    | 41%
+                            //                    span.text-black-50 &nbsp;(18)
+                            //
+                            //        .mb-2
+                            //            p.text-black-50 К этой дате планируется приурочить День открытых дверей
+                            //            .d-flex.align-items-center
+                            //                .progress.flex-grow-1
+                            //                    .progress-bar(role='progressbar', style='width: 13%', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
+                            //                .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
+                            //                    | 13%
+                            //                    span.text-black-50 &nbsp;(6)
+                            //
+                            //        .mb-2
+                            //            p.text-black-50 Социальная поддержка старшего поколения и ветеранов
+                            //            .d-flex.align-items-center
+                            //                .progress.flex-grow-1
+                            //                    .progress-bar(role='progressbar', style='width: 13%', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                            //                .text-nowrap.ml-2.text-right(style='min-width: 6.4rem')
+                            //                    | 13%
+                            //                    span.text-black-50 &nbsp;(6)
+                            //
+                            //    footer.mt-3
+                            //        .text-sm-center
+                            //            small.font-weight-bold.text-black-50
+                            //                | Вы ответили: «В Москве это праздник для людей».
+                            //                a(href='#') &nbsp;Отменить решение
+                            //        .d-sm-flex.justify-content-between.mt-2.pt-2.border-top
+                            //
+                            //            .small
+                            //                a(href='#') Кемеровская область
+                            //                | &nbsp;разместил(а) 25.06.2018
+                            //
+                            //            .small.text-sm-right
+                            //                a(href='#') 2 комментария
+                            //
+                            //
+                            //
+                            //
+
+
+                        //nav.mt-4.d-sm-flex.justify-content-between.align-items-start(aria-label='Page navigation example')
+                        //    ul.pagination.mb-0
+                        //
+                        //        li.page-item
+                        //            a.page-link(href='#') 1
+                        //        li.page-item
+                        //            a.page-link(href='#') 2
+                        //        li.page-item
+                        //            a.page-link(href='#') 3
+                        //
+                        //        li.page-item
+                        //            a.page-link(href='#') ...
+                        //
+                        //        li.page-item
+                        //            a.page-link(href='#') 86
 
                             .dropdown.mt-2.mt-md-0
                                 button#dropdownMenuButton2.btn.btn-secondary.dropdown-toggle.btn-sm(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')

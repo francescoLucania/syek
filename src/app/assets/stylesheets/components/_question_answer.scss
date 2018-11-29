@@ -1,0 +1,51 @@
+.question-answer-accordion-block {
+    .question-answer-accordion {
+        &:not(:last-child) {
+            margin-bottom: $grid-gutter-width / 2;
+        }
+    }
+}
+
+.question-answer-accordion {
+    @include interact(color, inherit);
+    @include interact(background, $primary, "hover .region-card-title::after");
+    @include interact(text-decoration, none);
+
+    border-radius: $border-radius;
+    background: $gray-100;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.06);
+    transition: box-shadow $transition-base;
+
+    &:hover {
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    &-header {
+        > button {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            text-align: left;
+            outline: none;
+
+            &[aria-expanded="true"] {
+                > i {
+                    transform: rotate(180deg);
+                }
+            }
+
+            > i {
+                @include font(3.2rem, 3.2rem);
+
+                margin-left: 3.2rem;
+                color: $primary;
+                transition: $transition-base;
+            }
+        }
+    }
+
+    &-body {
+
+    }
+}

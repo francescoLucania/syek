@@ -3,14 +3,14 @@ header.site-header
         nav.site-navigate.d-flex.justify-content-between
             .site-navigate-item.d-flex.align-items-center.py-2.py-md-3
                 a.header-logo.mr-3(href='#')
-                    img(src='img/suek-logo-ru.svg' alt='')
+                    img(src='img/logo.svg' alt='')
 
                 ul.list-inline.text-uppercase.d-none.mb-0.d-lg-flex
                     li: a.mr-2(href='#') О проекте
-                    li: a.mr-2(href='#') Новости
+                    li.d-none: a.mr-2(href='#') Новости
                     li: a.mr-2(href='#') Правила
                     li: a.mr-2(href='#') Помощь
-                    li: a(href='#') Регионы
+                    li.d-none: a(href='#') Регионы
 
             .site-navigate-item.d-flex.align-items-center.d-lg-none
                 button.button-icon(aria-controls='navbar' data-target="#navbar" data-toggle='collapse')
@@ -27,10 +27,10 @@ header.site-header
             .site-navigate-item
                 ul.list-inline.text-uppercase.mb-0
                     li.mb-1: a(href='#') О проекте
-                    li.mb-1: a(href='#') Новости
+                    li.d-none.mb-1: a(href='#') Новости
                     li.mb-1: a(href='#') Правила
                     li.mb-1: a(href='#') Помощь
-                    li: a(href='#') Регионы
+                    li.d-none: a(href='#') Регионы
 
                 .site-navigate-item.d-flex.justify-content-between.align-items-center.mt-3
                     button.site-navigate-login-and-registration(type='button' data-toggle="modal" data-target="#login-popup") Вход и регистрация
