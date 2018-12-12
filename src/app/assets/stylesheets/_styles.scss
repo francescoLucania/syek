@@ -98,6 +98,12 @@ table {
     cursor: not-allowed;
 }
 
+a {
+    &.disabled {
+        color:$gray-500;
+        pointer-events: none;
+}
+
 a:hover {
     text-decoration: none;
     color: $primary;

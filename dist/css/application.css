@@ -9792,6 +9792,11 @@ table {
   cursor: not-allowed;
 }
 
+a.disabled {
+  color: #adb5bd;
+  pointer-events: none;
+}
+
 a:hover {
   text-decoration: none;
   color: #125196;
@@ -10119,11 +10124,11 @@ trix-editor {
 }
 
 .site-footer-line > div:first-child {
-  background: #495057;
+  background: #125196;
 }
 
 .site-footer-line > div:nth-child(2) {
-  background: #adb5bd;
+  background: #54bce8;
 }
 
 .site-footer-line > div:nth-child(3) {
