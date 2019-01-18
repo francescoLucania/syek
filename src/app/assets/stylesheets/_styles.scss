@@ -100,8 +100,9 @@ table {
 
 a {
     &.disabled {
-        color:$gray-500;
+        color: $gray-500;
         pointer-events: none;
+    }
 }
 
 a:hover {
