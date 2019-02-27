@@ -1,33 +1,15 @@
 @charset "UTF-8";
 
 .site-footer {
+    background-image: linear-gradient(88deg, #007ce0, #00a6f1);
 
     &-content {
-        color: $gray-600;
+        color: #fff;
 
         > a {
             @include interact(color, $primary);
 
             color: $gray-900;
-        }
-    }
-
-    &-line {
-        > div {
-            height: 1.2rem;
-
-            &:first-child {
-                background: $primary;
-            }
-
-            &:nth-child(2) {
-                background: #54bce8;
-            }
-
-            &:nth-child(3) {
-                background: $gray-300;
-            }
-
         }
     }
 

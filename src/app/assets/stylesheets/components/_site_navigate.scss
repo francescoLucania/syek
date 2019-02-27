@@ -3,9 +3,9 @@
     &-item {
         > ul {
             > li > a {
-                @include interact(color, $primary);
+                @include interact(color, #fff - 20%);
 
-                color: $gray-700;
+                color: #fff;
                 font-weight: 500;
                 text-decoration: none;
             }
@@ -21,8 +21,13 @@
         @include interact(color, $primary);
 
         font-weight: 500;
-        color: $gray-700;
+        color: #fff;
         white-space: nowrap;
         text-decoration: none;
+    }
+
+    &.navbar-collapse {
+        border-color: $blue;
+        background: $blue;
     }
 }

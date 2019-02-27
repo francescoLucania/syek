@@ -16,7 +16,7 @@
     <header class="site-header">
       <div class="container">
         <nav class="site-navigate d-flex justify-content-between">
-          <div class="site-navigate-item d-flex align-items-center py-2 py-md-3"><a class="header-logo mr-3" href="#"><img src="img/fond.svg" alt=""></a>
+          <div class="site-navigate-item d-flex align-items-center py-2 py-md-3"><a class="header-logo mr-3" href="#"><img src="img/logo-s.svg" alt="Активный регион"></a>
             <ul class="list-inline text-uppercase d-none mb-0 d-lg-flex">
               <li><a class="mr-2" href="#">О проекте</a></li>
               <li class="d-none"><a class="mr-2" href="#">Новости</a></li>
@@ -32,7 +32,7 @@
             <button class="site-navigate-login-and-registration" type="button" data-toggle="modal" data-target="#login-popup">Вход и регистрация</button><a class="button-icon search-button ml-3" href="#">Поиск<i class="mdi mdi-magnify"></i></a>
           </div>
         </nav>
-        <div class="site-navigate border-top border-bottom p-2 navbar-collapse collapse" id="navbar">
+        <div class="site-navigate p-2 navbar-collapse collapse" id="navbar">
           <div class="site-navigate-item">
             <ul class="list-inline text-uppercase mb-0">
               <li class="mb-1"><a href="#">О проекте</a></li>
@@ -159,7 +159,7 @@
               </div>
             </div>
             <aside class="col-12 col-lg-4 col-xl-3 mt-5 mt-md-0">
-              <div class="tape-aside text-md-center" style="min-height: 600px;">
+              <div class="tape-aside component-background text-md-center" data-background="white">
                 <h5 class="text-uppercase text-black-50 font-weight-bold">Категории идей</h5>
                 <ul class="list-inline mb-0 mr-auto">
                   <li class="mb-1"><a href="#">Все идеи</a></li>
@@ -181,16 +181,11 @@
         </div>
       </div>
     </main>
-    <footer class="site-footer pt-3">
+    <footer class="site-footer pt-3 pb-3">
       <div class="container">
-        <p class="site-footer-content mb-2">© Общественный форум,
+        <p class="site-footer-content mb-0">© Общественный форум,
           <script>document.write(new Date().getFullYear());</script>.
         </p>
-        <div class="site-footer-line d-flex">
-          <div class="col-4"></div>
-          <div class="col-4"></div>
-          <div class="col-4"></div>
-        </div>
       </div>
     </footer>
     <div class="modal fade" id="login-popup" tabindex="-1" role="dialog" aria-labelledby="login popup" aria-hidden="true">

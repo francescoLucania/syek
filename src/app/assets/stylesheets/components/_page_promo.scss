@@ -1,0 +1,20 @@
+.page-promo {
+    padding-top: 12.6rem; // design
+    background-image: linear-gradient(107deg, #007ce0, #0eb4ff);
+    color: #fff;
+
+    @include media-breakpoint-up(md) {
+        min-height: 32rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 17.6rem; // design
+        min-height: 40rem;
+    }
+
+    background: {
+        position: 50%;
+        size: cover;
+        repeat: no-repeat;
+    };
+}

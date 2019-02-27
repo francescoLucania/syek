@@ -4,11 +4,32 @@ block title
     title Idea
 
 block main
-    .section.section--background-gray-100.section--not-bottom-gutter
+    section.page-promo(style='background-image:url(img/region-bg-blue.jpg)')
+        .container
+            .no-gutters
+                .row
+                    .col-lg-8.mb-4
+                        .icon-header
+                            .icon-header-image
+                                img(src='img/regions/chrest@2x.png' alt='')
+                            .icon-header-content
+                                h1.h1.mb-2 Хабаровский край
+                                ul.list-unstyled.font-weight-bold
+                                    li п. Чегдомын
+                                    li п. Ванино
+
+                    .col-lg-4.mb-4
+                        ul.list-unstyled
+                            li Население — 27302
+                            li Идей на обсуждении — 10
+                            li Реализовано идей — 10
+                            li Активных голосований — 7
+
+
+    .section.section--navigate
         .container
             .no-gutters
                 .col-lg-8
-                    .display-1.text-uppercase Хабаровский край
                     .region-navigate.mt-2
                         ul.list-inline.d-flex.m-0.text-uppercase.lead
                             li.mr-3: a.active(href='region.html') Идеи
@@ -17,19 +38,19 @@ block main
                             li.d-none.mr-3: a(href='#') Эксперты
                             li: a(href='#') О регионе
 
-    .section
+    .section.section--fixed-background
         .container
             .row.justify-content-between
                 .col-12.col-lg-8.col-xl-9
-                    nav.mb-3(aria-label='breadcrumb')
-                        ol.breadcrumb.small
-                            li.breadcrumb-item.active(aria-current='page')
-                                a(href='#') Все идеи
-                            li.breadcrumb-item.active(aria-current='page')
-                                a(href='#') п. Чегдомын
+                    //nav.component-background.mb-3(aria-label='breadcrumb')
+                    //    ol.breadcrumb.small
+                    //        li.breadcrumb-item.active(aria-current='page')
+                    //            a(href='#') Все идеи
+                    //        li.breadcrumb-item.active(aria-current='page')
+                    //            a(href='#') п. Чегдомын
 
 
-                    article.content-page
+                    article.component-background(data-background='white')
                         header
                             .text-black-50.mb-2 Хабаровский край / п. Чегдомын
                             h1.h1.mb-3 Строительство горнолыжного спуска в районе реки Сатанки
@@ -114,9 +135,8 @@ block main
                                     })();
                                 .pluso(data-background='transparent', data-options='medium,square,line,horizontal,nocounter,theme=04', data-services='vkontakte,odnoklassniki,facebook,twitter,google')
 
-                    .mt-4
+                    .component-background.mt-4(data-background='white')
                         include components/_comments
-
 
 
                 include components/_aside

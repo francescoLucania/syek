@@ -1,0 +1,21 @@
+.icon-header {
+    @include media-breakpoint-up(md) {
+        display: inline-flex;
+        align-items: flex-start;
+    }
+
+    &-image {
+        margin: 0 auto 1.6rem;
+        width: 8.8rem;
+
+        @include media-breakpoint-up(md) {
+            margin-right: 1.6rem;
+        }
+
+        > img {
+            width: 100%;
+            vertical-align: top;
+        }
+    }
+
+}

@@ -24,8 +24,27 @@
         }
     }
 
+    &-editor {
+        @include media-breakpoint-down(md) {
+            margin-left: -1.2rem;
+            margin-right: -1.2rem;
+        }
+
+        trix-toolbar,
+        trix-editor {
+            border-radius: 0;
+            border-left: 0;
+            border-right: 0;
+        }
+    }
+
     &-description,
     &-action {
-        padding-left: 5.4rem;
+        padding-left: .8rem;
+        padding-right: .8rem;
+
+        @include media-breakpoint-up(md) {
+            padding-left: 5.4rem;
+        }
     }
 }

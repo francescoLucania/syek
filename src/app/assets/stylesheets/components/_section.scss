@@ -15,6 +15,16 @@
         }
     }
 
+    &--background-primary {
+        margin: 0;
+        padding: 6rem 0;
+        background-image: linear-gradient(107deg, #007ce0, #0eb4ff);
+
+        @include media-breakpoint-up(lg) {
+            padding: 8rem 0;
+        }
+    }
+
     &--not-bottom-gutter {
         padding-bottom: 0;
         margin-bottom: 0;
@@ -22,6 +32,32 @@
         @include media-breakpoint-up(lg) {
             padding-bottom: 0;
             margin-bottom: 0;
+        }
+    }
+
+    &--navigate {
+        margin: 2.4rem 0;
+
+        @include media-breakpoint-up(lg) {
+            margin: 2.4rem 0;
+        }
+    }
+
+    &--fixed-background {
+        &::before {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background: {
+                position: 50%;
+                size: cover;
+                repeat: no-repeat;
+                image: url(../img/bg.jpg);
+            };
+            content: "";
         }
     }
 }
