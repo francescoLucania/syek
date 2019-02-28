@@ -4,129 +4,178 @@ block title
     title Активный регион
 
 block main
-    section.section
+    section.page-promo
         .container
             .no-gutters
-                .col-lg-8
-                    h2.display-1.text-uppercase Активный регион
-                    .lead.text-black-50
-                        p «Он-лайн - платформа для взаимодействия граждан, региональных и местных органов власти, представителей предпринимательского сообщества.
-                        p Данный ресурс предоставляет возможность:
-                        ul
-                            li обсуждения различных инициатив по развитию территорий
-                            li оценки конкретных планов развития
-                            li включения всех заинтересованных сторон в их реализацию
+                .row
+                    .page-promo-information-box.col-lg-6.mb-4
+                        h1.display-1 Активный регион
+                        p.page-promo-description Онлайн-платформа для взаимодействия граждан, региональных и местных органов власти, представителей предпринимательского сообщества
 
-                        p Будущее нашей «малой родины» зависит от нас!»
+                    .page-promo-image-box.col-lg-6.position-relative
+                        img.page-promo-image(src='img/promo-img.png' alt='')
 
 
-        .mt-4
-            .container
-                .row.region-row
-                    .region-col.col-sm-6.col-md-6.col-lg-4.col-xl-3
-                        a.region-card.d-block.p-2.p-sm-3(href='#')
-                            .d-flex.justify-content-between.align-items-start.mb-1
-                                h3.h5.region-card-title.py-1.mb-2.font-weight-bold.text-uppercases Хабаровский<br>край
-                                img(src='img/regions/khab-krai.png' alt='Регион')
-                            div.mb-2 2 населённых пункта
+    //section.section
+    //    .container
+    //        .no-gutters
+    //            .col-lg-8
+    //                h2.display-1.text-uppercase Активный регион
+    //                .lead.text-black-50
+    //                    p «Он-лайн - платформа для взаимодействия граждан, региональных и местных органов власти, представителей предпринимательского сообщества.
+    //                    p Данный ресурс предоставляет возможность:
+    //                    ul
+    //                        li обсуждения различных инициатив по развитию территорий
+    //                        li оценки конкретных планов развития
+    //                        li включения всех заинтересованных сторон в их реализацию
+    //
+    //                    p Будущее нашей «малой родины» зависит от нас!»
+    //
+    //
+    //    .mt-4
+    //        .container
+    //            .row.region-row
+    //                .region-col.col-sm-6.col-md-6.col-lg-4.col-xl-3
+    //                    a.region-card.d-block.p-2.p-sm-3(href='#')
+    //                        .d-flex.justify-content-between.align-items-start.mb-1
+    //                            h3.h5.region-card-title.py-1.mb-2.font-weight-bold.text-uppercases Хабаровский<br>край
+    //                            img(src='img/regions/khab-krai.png' alt='Регион')
+    //                        div.mb-2 2 населённых пункта
+    //
+    //                        .small.text-black-50
+    //                            ul.list-inline
+    //                                li Население — 27302
+    //                                li Идей на обсуждении - 1
+    //                                li Реализовано идей - 1
+    //                                li Активных голосований - 1
+    //
+    //
+    //
+    //                .region-col.col-sm-6.col-md-6.col-lg-4.col-xl-3
+    //                    a.region-card.d-block.p-2.p-sm-3.disabled(href='#')
+    //                        .d-flex.justify-content-between.align-items-start.mb-1
+    //                            h3.h5.region-card-title.py-1.mb-2.font-weight-bold.text-uppercases Республика<br>Бурятия
+    //                            img(src='img/regions/buryatiya.png' alt='Регион')
+    //                        div.mb-2 1 населённых пункт
+    //
+    //                        .small.text-black-50
+    //                            ul.list-inline
+    //                                li Население - 3985
+    //                                li Идей на обсуждении - 0
+    //                                li Реализовано идей - 0
+    //                                li Активных голосований - 0
+    //
+    //
+    //                .region-col.col-sm-6.col-md-6.col-lg-4.col-xl-3
+    //                    a.region-card.d-block.p-2.p-sm-3.disabled(href='#')
+    //                        .d-flex.justify-content-between.align-items-start.mb-1
+    //                            h3.h5.region-card-title.py-1.mb-2.font-weight-bold.text-uppercases Красноярский<br>край
+    //                            img(src='img/regions/krasnoyarsk_krai.png' alt='Регион')
+    //                        div.mb-2 4 населённых пункта
+    //
+    //                        .small.text-black-50
+    //                            ul.list-inline
+    //                                li Население - 1158359
+    //                                li Идей на обсуждении - 0
+    //                                li Реализовано идей - 0
+    //                                li Активных голосований - 0
+    //
+    //
+    //                .region-col.col-sm-6.col-md-6.col-lg-4.col-xl-3
+    //                    a.region-card.d-block.p-2.p-sm-3.disabled(href='#')
+    //                        .d-flex.justify-content-between.align-items-start.mb-1
+    //                            h3.h5.region-card-title.py-1.mb-2.font-weight-bold.text-uppercases Кемеровская<br>область
+    //                            img(src='img/regions/Coat_of_arms_of_Kemerovo_Oblast.png' alt='Регион')
+    //                        div.mb-2 3 населённых пунктa
+    //
+    //                        .small.text-black-50
+    //                            ul.list-inline
+    //                                li Население — 384307
+    //                                li Идей на обсуждении - 0
+    //                                li Реализовано идей - 0
+    //                                li Активных голосований - 0
+    //
+    //
+    //
+    //                .region-col.col-sm-6.col-md-6.col-lg-4.col-xl-3
+    //                    a.region-card.d-block.p-2.p-sm-3.disabled(href='#')
+    //                        .d-flex.justify-content-between.align-items-start.mb-1
+    //                            h3.h5.region-card-title.py-1.mb-2.font-weight-bold.text-uppercases Забайкальский<br>Край
+    //                            img(src='img/regions/zabaikal-krai.jpg' alt='Регион')
+    //                        div.mb-2 4 населённых пункта
+    //
+    //                        .small.text-black-50
+    //                            ul.list-inline
+    //                                li Население - 366027
+    //                                li Идей на обсуждении - 0
+    //                                li Реализовано идей - 0
+    //                                li Активных голосований - 0
+    //
+    //
+    //                .region-col.col-sm-6.col-md-6.col-lg-4.col-xl-3
+    //                    a.region-card.d-block.p-2.p-sm-3.disabled(href='#')
+    //                        .d-flex.justify-content-between.align-items-start.mb-1
+    //                            h3.h5.region-card-title.py-1.mb-2.font-weight-bold.text-uppercases Приморский<br>край:
+    //                            img(src='img/regions/primorsky_krai.png' alt='Регион')
+    //                        div.mb-2 2 населённых пункта
+    //
+    //                        .small.text-black-50
+    //                            ul.list-inline
+    //                                li Население - 608548
+    //                                li Идей на обсуждении - 0
+    //                                li Реализовано идей - 0
+    //                                li Активных голосований - 0
+    //
+    //
+    //                .region-col.col-sm-6.col-md-6.col-lg-4.col-xl-3
+    //                    a.region-card.d-block.p-2.p-sm-3.disabled(href='#')
+    //                        .d-flex.justify-content-between.align-items-start.mb-1
+    //                            h3.h5.region-card-title.py-1.mb-2.font-weight-bold.text-uppercases Республика<br>Хакасия:
+    //                            img(src='img/regions/hakassia.png' alt='Регион')
+    //                        div.mb-2 3 населённых пункта
+    //
+    //                        .small.text-black-50
+    //                            ul.list-inline
+    //                                li Население - 161010
+    //                                li Идей на обсуждении - 0
+    //                                li Реализовано идей - 0
+    //                                li Активных голосований - 0
 
-                            .small.text-black-50
-                                ul.list-inline
-                                    li Население — 27302
-                                    li Идей на обсуждении - 1
-                                    li Реализовано идей - 1
-                                    li Активных голосований - 1
+
+    div.section.mt-4.section--fixed-background
+        .container
+            h2.text-center Данный ресурс предоставляет возможность:
 
 
+    div.component-background-primary.pt-3.pt-lg-5
+        .container
+            .no-gutters
+                .row
+                    .page-promo-image-box.col-lg-6.position-relative
+                        img(src='img/promo-img2.png' alt='')
 
-                    .region-col.col-sm-6.col-md-6.col-lg-4.col-xl-3
-                        a.region-card.d-block.p-2.p-sm-3.disabled(href='#')
-                            .d-flex.justify-content-between.align-items-start.mb-1
-                                h3.h5.region-card-title.py-1.mb-2.font-weight-bold.text-uppercases Республика<br>Бурятия
-                                img(src='img/regions/buryatiya.png' alt='Регион')
-                            div.mb-2 1 населённых пункт
+                    .page-promo-information-box.d-lg-flex.align-items-center.col-lg-6.mb-4
+                        .display-2 Будущее нашей «малой родины» зависит от нас!»
 
-                            .small.text-black-50
-                                ul.list-inline
-                                    li Население - 3985
-                                    li Идей на обсуждении - 0
-                                    li Реализовано идей - 0
-                                    li Активных голосований - 0
+    section.page-promo.page-promo--min-gutters.page-promo--color-base(style='background-image:url(img/region-bg.jpg)')
+        .container
+            .no-gutters
+                .row
+                    .col-lg-8.mb-3.mb-md-0
+                        .icon-header
+                            .icon-header-image
+                                img(src='img/regions/chrest@2x.png' alt='')
+                            .icon-header-content
+                                h1.h1.mb-2 Хабаровский край
+                                ul.list-unstyled.font-weight-bold
+                                    li п. Чегдомын
+                                    li п. Ванино
 
+                    .col-lg-4
+                        ul.list-unstyled
+                            li Население — 27302
+                            li Идей на обсуждении — 10
+                            li Реализовано идей — 10
+                            li Активных голосований — 7
 
-                    .region-col.col-sm-6.col-md-6.col-lg-4.col-xl-3
-                        a.region-card.d-block.p-2.p-sm-3.disabled(href='#')
-                            .d-flex.justify-content-between.align-items-start.mb-1
-                                h3.h5.region-card-title.py-1.mb-2.font-weight-bold.text-uppercases Красноярский<br>край
-                                img(src='img/regions/krasnoyarsk_krai.png' alt='Регион')
-                            div.mb-2 4 населённых пункта
-
-                            .small.text-black-50
-                                ul.list-inline
-                                    li Население - 1158359
-                                    li Идей на обсуждении - 0
-                                    li Реализовано идей - 0
-                                    li Активных голосований - 0
-
-
-                    .region-col.col-sm-6.col-md-6.col-lg-4.col-xl-3
-                        a.region-card.d-block.p-2.p-sm-3.disabled(href='#')
-                            .d-flex.justify-content-between.align-items-start.mb-1
-                                h3.h5.region-card-title.py-1.mb-2.font-weight-bold.text-uppercases Кемеровская<br>область
-                                img(src='img/regions/Coat_of_arms_of_Kemerovo_Oblast.png' alt='Регион')
-                            div.mb-2 3 населённых пунктa
-
-                            .small.text-black-50
-                                ul.list-inline
-                                    li Население — 384307
-                                    li Идей на обсуждении - 0
-                                    li Реализовано идей - 0
-                                    li Активных голосований - 0
-
-
-
-                    .region-col.col-sm-6.col-md-6.col-lg-4.col-xl-3
-                        a.region-card.d-block.p-2.p-sm-3.disabled(href='#')
-                            .d-flex.justify-content-between.align-items-start.mb-1
-                                h3.h5.region-card-title.py-1.mb-2.font-weight-bold.text-uppercases Забайкальский<br>Край
-                                img(src='img/regions/zabaikal-krai.jpg' alt='Регион')
-                            div.mb-2 4 населённых пункта
-
-                            .small.text-black-50
-                                ul.list-inline
-                                    li Население - 366027
-                                    li Идей на обсуждении - 0
-                                    li Реализовано идей - 0
-                                    li Активных голосований - 0
-
-
-                    .region-col.col-sm-6.col-md-6.col-lg-4.col-xl-3
-                        a.region-card.d-block.p-2.p-sm-3.disabled(href='#')
-                            .d-flex.justify-content-between.align-items-start.mb-1
-                                h3.h5.region-card-title.py-1.mb-2.font-weight-bold.text-uppercases Приморский<br>край:
-                                img(src='img/regions/primorsky_krai.png' alt='Регион')
-                            div.mb-2 2 населённых пункта
-
-                            .small.text-black-50
-                                ul.list-inline
-                                    li Население - 608548
-                                    li Идей на обсуждении - 0
-                                    li Реализовано идей - 0
-                                    li Активных голосований - 0
-
-
-                    .region-col.col-sm-6.col-md-6.col-lg-4.col-xl-3
-                        a.region-card.d-block.p-2.p-sm-3.disabled(href='#')
-                            .d-flex.justify-content-between.align-items-start.mb-1
-                                h3.h5.region-card-title.py-1.mb-2.font-weight-bold.text-uppercases Республика<br>Хакасия:
-                                img(src='img/regions/hakassia.png' alt='Регион')
-                            div.mb-2 3 населённых пункта
-
-                            .small.text-black-50
-                                ul.list-inline
-                                    li Население - 161010
-                                    li Идей на обсуждении - 0
-                                    li Реализовано идей - 0
-                                    li Активных голосований - 0
-
-
+                        a.btn.btn-primary.mt-3(href='#') Подробнее

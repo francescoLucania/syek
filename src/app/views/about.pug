@@ -4,21 +4,30 @@ block title
     title О нас
 
 block main
-    section.section.section--background-gray-100.section--not-bottom-gutter
+    section.page-promo
         .container
             .no-gutters
+                .row
+                    .page-promo-information-box.col-lg-6.mb-4
+                        h1.display-1 Активный регион
+                        p.page-promo-description Онлайн-платформа для взаимодействия граждан, региональных и местных органов власти, представителей предпринимательского сообщества
+
+                    .page-promo-image-box.col-lg-6.position-relative
+                        img.page-promo-image(src='img/promo-img.png' alt='')
+
+    .section.section--navigate
+        .container
+            .no-gutters.component-background(data-background='white')
                 .col-lg-8
-                    h1.display-1.text-uppercase Общественный форум
                     .region-navigate.mt-2
                         ul.list-inline.d-flex.m-0.text-uppercase.lead
                             li.mr-3: a.active(href='#') О проекте
                             li.mr-3: a(href='#') Как это работает
                             li.mr-3: a(href='#') Вопросы и ответы
 
-
-    section.section
+    section.section.section.section--fixed-background
         .container
-            .wysiwyg.js-wysiwyg
+            .wysiwyg.component-background(data-background='white').js-wysiwyg
                 h2 О проекте
                 p В настоящее время решение актуальных вопросов социально-экономического развития территорий Российской Федерации во многом определяется интенсивностью и качеством взаимодействия органов местного самоуправления, общественности и бизнеса.
                 p: b Проект "Активный регион" направлен на:

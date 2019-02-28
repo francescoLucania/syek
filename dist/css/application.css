@@ -10088,11 +10088,12 @@ trix-editor {
 
 .page-promo {
   padding-top: 12.6rem;
-  background-image: linear-gradient(107deg, #007ce0, #0eb4ff);
-  color: #fff;
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: linear-gradient(107deg, #007ce0, #0eb4ff);
+  font-weight: 600;
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -10106,6 +10107,73 @@ trix-editor {
     padding-top: 17.6rem;
     min-height: 40rem;
   }
+}
+
+.page-promo--min-gutters {
+  padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .page-promo--min-gutters {
+    padding: 6rem 0;
+    min-height: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-promo--min-gutters {
+    padding: 8rem 0;
+    min-height: auto;
+  }
+}
+
+.page-promo--color-base {
+  color: #212529;
+}
+
+.page-promo-description {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .page-promo-description {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-promo-description {
+    font-size: 2.6rem;
+    line-height: 1.69;
+  }
+}
+
+@media all and (max-width: 1199px) {
+  .page-promo-information-box {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+.page-promo-image-box {
+  display: none;
+}
+
+@media all and (min-width: 1200px) {
+  .page-promo-image-box {
+    display: block;
+  }
+}
+
+.page-promo-image {
+  position: absolute;
+  right: -60px;
+  bottom: 0;
+  width: 65rem;
+  height: auto;
+  vertical-align: top;
 }
 
 .section {
@@ -10486,7 +10554,7 @@ a:hover .mod_no-touchevents .button-icon {
 
 .tape-card {
   border-radius: 0.25rem;
-  background: #f8f9fa;
+  background: #fff;
   color: inherit;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06);
   transition: box-shadow all 0.2s ease-in-out;
@@ -10818,4 +10886,9 @@ a:hover .mod_no-touchevents .button-icon {
 
 .component-background[data-background='white'] {
   background: #fff;
+}
+
+.component-background-primary {
+  background-image: linear-gradient(107deg, #007ce0, #0eb4ff);
+  color: #fff;
 }

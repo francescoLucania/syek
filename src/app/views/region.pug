@@ -4,20 +4,40 @@ block title
     title Region
 
 block main
-    section.section.section--background-gray-100.section--not-bottom-gutter
+    section.page-promo(style='background-image:url(img/region-bg-blue.jpg)')
         .container
             .no-gutters
+                .row
+                    .col-lg-8.mb-4
+                        .icon-header
+                            .icon-header-image
+                                img(src='img/regions/chrest@2x.png' alt='')
+                            .icon-header-content
+                                h1.h1.mb-2 Хабаровский край
+                                ul.list-unstyled.font-weight-bold
+                                    li п. Чегдомын
+                                    li п. Ванино
+
+                    .col-lg-4.mb-4
+                        ul.list-unstyled
+                            li Население — 27302
+                            li Идей на обсуждении — 10
+                            li Реализовано идей — 10
+                            li Активных голосований — 7
+
+    .section.section--navigate
+        .container
+            .no-gutters.component-background(data-background='white')
                 .col-lg-8
-                    h1.display-1.text-uppercase Хабаровский край
                     .region-navigate.mt-2
                         ul.list-inline.d-flex.m-0.text-uppercase.lead
                             li.mr-3: a.active(href='region.html') Идеи
                             li.d-none.mr-3: a(href='#') Организации
                             li.mr-3: a(href='news.html') Новости
-                            li.d-none.d-none.mr-3: a(href='#') Эксперты
+                            li.d-none.mr-3: a(href='#') Эксперты
                             li: a(href='#') О регионе
 
-    div.section.mt-4
+    div.section.mt-4.section--fixed-background
         .container
             include components/_region_carousel
 
