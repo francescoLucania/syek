@@ -16,7 +16,7 @@
     <header class="site-header">
       <div class="container">
         <nav class="site-navigate d-flex justify-content-between">
-          <div class="site-navigate-item d-flex align-items-center py-2 py-md-3"><a class="header-logo mr-3" href="#"><img src="img/logo-s.svg" alt="Активный регион"></a>
+          <div class="site-navigate-item d-flex align-items-center py-2 py-md-3"><a class="header-logo mr-3" href="#"><img src="img/logo-1.svg" alt="Активный регион"></a>
             <ul class="list-inline text-uppercase d-none mb-0 d-lg-flex">
               <li><a class="mr-2" href="#">О проекте</a></li>
               <li class="d-none"><a class="mr-2" href="#">Новости</a></li>
@@ -187,21 +187,35 @@
             </div>
             <aside class="col-12 col-lg-4 col-xl-3 mt-5 mt-md-0">
               <div class="tape-aside component-background text-md-center" data-background="white">
-                <h5 class="text-uppercase text-black-50 font-weight-bold">Категории идей</h5>
-                <ul class="list-inline mb-0 mr-auto">
-                  <li class="mb-1"><a href="#">Все идеи</a></li>
-                  <li class="mb-1"><a href="#">п. Чегдомын</a></li>
-                  <li class="mb-1"><a class="disabled" href="#">п. Ванино</a></li>
-                </ul>
+                <h5 class="text-uppercase font-weight-bold">Муниципальные образования</h5>
+                <!--ul.list-inline.mb-0.mr-auto-->
+                <!--    li.mb-1: a(href='#') Все идеи-->
+                <!--    li.mb-1: a(href='#') п. Чегдомын-->
+                <!--    li.mb-1: a.disabled(href='#') п. Ванино-->
+                <form class="mt-2">
+                  <label class="aside-checkbox">
+                    <input type="checkbox" checked><i></i><span>п. Ванино</span>
+                    <div></div>
+                  </label>
+                  <label class="aside-checkbox">
+                    <input type="checkbox"><i></i><span>п. Чегдомын</span>
+                    <div></div>
+                  </label>
+                  <label class="aside-checkbox">
+                    <input type="checkbox"><i></i><span>Верхнебуреинский район</span>
+                    <div></div>
+                  </label>
+                </form>
                 <!--hr.my-3.ml-0.my-md-4.ml-md-auto.text-primary(style='width: 3rem; border: 1px solid')-->
                 <!---->
                 <!--h5.text-uppercase.text-black-50.font-weight-bold У вас есть идея?-->
                 <!--p.mb-3.text-black-50 Lorem ipsum dolor sit amet, consectetur&nbsp;adipiscing&nbsp;elit:-->
                 <!--button.btn.btn-primary(type='button' data-toggle="modal" data-target="#add-idea") Добавить идею-->
-                <hr class="my-3 ml-0 my-md-4 ml-md-auto mr-md-auto d-md-block text-primary" style="width: 3rem; border: 1px solid">
-                <h5 class="text-uppercase text-black-50 font-weight-bold">Расскажите друзьям</h5>
-                <p class="mb-3 text-black-50">Поделитесь ссылкой&nbsp;на&nbsp;эту&nbsp;страницу:</p>
-                <div class="d-flex mt-2 size-md justify-content-md-center"><a class="button-social-network mr-1" href="#"><i class="mdi mdi-facebook"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-twitter"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-odnoklassniki"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-at"></i></a><a class="button-social-network mr-1" href="#"><i class="mdi mdi-account-outline"></i></a></div>
+                <!--hr.my-3.ml-0.my-md-4.ml-md-auto.mr-md-auto.d-md-block.text-primary(style='width: 3rem; border: 1px solid')-->
+                <!---->
+                <!--h5.text-uppercase.text-black-50.font-weight-bold Расскажите друзьям-->
+                <!--p.mb-3.text-black-50 Поделитесь ссылкой&nbsp;на&nbsp;эту&nbsp;страницу:-->
+                <!--+social_button_grid('size-md justify-content-md-center')-->
               </div>
             </aside>
           </div>

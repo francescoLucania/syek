@@ -1,0 +1,54 @@
+.scope {
+    @include media-breakpoint-up(md) {
+        width: 28%;
+    }
+
+    &:not(:last-child) {
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+            margin-right: 3rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-right: 5rem;
+        }
+    }
+
+    &-body {
+        position: relative;
+        padding-bottom: 100%;
+    }
+
+    &-content {
+        @include size(100%);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: #fff;
+        text-align: center;
+
+        > img {
+            vertical-align: top;
+        }
+
+        > p {
+            padding: 2rem;
+            font-weight: 600;
+            color: $blue;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
